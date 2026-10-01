@@ -1,0 +1,540 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "custom_liquid_cJnqgV": {
+      "type": "custom-liquid",
+      "custom_css": [
+        "/* 5× horizontal padding — desktop. Mobile kept usable. */.ts-container {padding: 0 160px; }",
+        ".ts-hero-title-band {padding: 32px 160px 26px; }",
+        ".ts-bundle {padding: 48px 160px 64px; }",
+        ".ts-pub-header {padding: 14px 160px 16px; }",
+        "@media (max-width: 540px) {.ts-container {padding: 0 32px; } .ts-hero-title-band {padding: 24px 32px 22px; } .ts-bundle {padding: 36px 32px 48px; } .ts-pub-header {padding: 14px 24px 16px; }}"
+      ],
+      "name": "Page content",
+      "settings": {
+        "custom_liquid": "{% comment %}\n  Magyx SE — 5 Men's Fragrances for Summer (advertorial listicle).\n  Paste-ready for Shopify Custom Liquid section.\n\n  USAGE:\n  1. Online Store → Themes → Customize → Add section → Custom Liquid\n  2. Paste this entire file into the \"Custom Liquid\" textarea.\n  3. Save. (No section settings to configure — everything is hard-coded.)\n\n  All CSS is scoped under `.magyx-listicle` so it cannot collide with\n  the theme's own styles.\n\n  IMAGES:\n  - All image src attributes use `images/filename.ext` relative paths.\n  - Upload these to Shopify Files (Content → Files) and replace each src\n    with the resulting Shopify CDN URL.\n  - Required files:\n      hero-desktop.png, hero-mobile.png, author-avatar.png,\n      dior-sauvage.webp, acqua-di-gio.webp, bleu-de-chanel.webp,\n      aventus.png, ysl-y-edp.png\n\n  CTAs:\n  - All product CTAs point to live magyx.co/sv-se/products/... URLs.\n  - Final CTA: /sv-se/products/5-x-100ml-perfume-bottles\n{% endcomment %}\n\n<link rel=\"preconnect\" href=\"https://fonts.googleapis.com\">\n<link rel=\"preconnect\" href=\"https://fonts.gstatic.com\" crossorigin>\n<link href=\"https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700;800&display=swap\" rel=\"stylesheet\">\n\n<style>\nhtml{scroll-behavior:smooth;}\n.magyx-listicle{\n  --ts-bg:#faf9f6;\n  --ts-fg:#121212;\n  --ts-fg-muted:#5a5a5a;\n  --ts-accent:#C41E3A;\n  --ts-accent-hover:#A51D36;\n  --ts-rule:#e5e1d8;\n  --ts-price-bg:#f3efe6;\n  --ts-max:720px;\n  font-family:'Figtree',-apple-system,BlinkMacSystemFont,system-ui,sans-serif;\n  background:var(--ts-bg);\n  color:var(--ts-fg);\n  font-size:18px;\n  line-height:1.65;\n  -webkit-font-smoothing:antialiased;\n  -moz-osx-font-smoothing:grayscale;\n}\n.magyx-listicle *{box-sizing:border-box;}\n.magyx-listicle a{color:var(--ts-accent);text-decoration:underline;text-underline-offset:2px;}\n.magyx-listicle a:hover{color:var(--ts-accent-hover);}\n.magyx-listicle p{margin:0 0 16px;}\n.magyx-listicle img{max-width:100%;height:auto;display:block;}\n\n.magyx-listicle .ts-pub-header{\n  text-align:center;\n  padding:14px 24px 16px;\n  background:#fff;\n  border-bottom:1px solid var(--ts-rule);\n}\n.magyx-listicle .ts-pub-eyebrow{\n  font-size:10px;\n  letter-spacing:0.32em;\n  text-transform:uppercase;\n  color:var(--ts-fg-muted);\n  margin:0 0 6px;\n}\n.magyx-listicle .ts-pub-eyebrow::before,\n.magyx-listicle .ts-pub-eyebrow::after{content:\"·\";margin:0 6px;}\n.magyx-listicle .ts-pub-logo{\n  font-family:'Figtree',sans-serif;\n  font-weight:700;\n  font-size:30px;\n  letter-spacing:-0.01em;\n  color:var(--ts-fg);\n  font-style:italic;\n}\n\n.magyx-listicle .ts-hero-image{\n  display:block;\n  width:100%;\n  overflow:hidden;\n  line-height:0;\n}\n.magyx-listicle .ts-hero-image img{\n  display:block;\n  width:100%;\n  height:auto;\n}\n\n.magyx-listicle .ts-hero-title-band{\n  background:var(--ts-accent);\n  color:#fff;\n  padding:32px 32px 26px;\n  text-align:center;\n}\n.magyx-listicle .ts-hero-title-band h1{\n  color:#fff;\n  font-size:32px;\n  line-height:1.2;\n  font-weight:800;\n  margin:0 auto 18px;\n  max-width:720px;\n  letter-spacing:-0.01em;\n}\n.magyx-listicle .ts-byline{\n  display:inline-flex;\n  align-items:center;\n  gap:10px;\n  font-size:14px;\n  color:rgba(255,255,255,0.92);\n  flex-wrap:wrap;\n  justify-content:center;\n}\n.magyx-listicle .ts-byline-avatar{\n  width:32px;\n  height:32px;\n  border-radius:50%;\n  background:#f3efe6;\n  display:inline-block;\n  flex-shrink:0;\n  overflow:hidden;\n}\n.magyx-listicle .ts-byline-avatar img{width:100%;height:100%;object-fit:cover;display:block;}\n.magyx-listicle .ts-byline-sep{opacity:0.55;}\n\n.magyx-listicle .ts-container{\n  max-width:var(--ts-max);\n  margin:0 auto;\n  padding:0 32px;\n}\n.magyx-listicle .ts-article{padding:32px 0 60px;}\n\n.magyx-listicle .ts-dek{\n  font-size:20px;\n  font-style:italic;\n  color:var(--ts-fg-muted);\n  margin:24px 0 28px;\n  line-height:1.5;\n  text-align:center;\n}\n.magyx-listicle .ts-rule{\n  border:0;\n  border-top:1px solid var(--ts-rule);\n  margin:32px 0;\n}\n\n.magyx-listicle .ts-scent{margin:0 0 8px;}\n.magyx-listicle .ts-scent-title{\n  font-size:28px;\n  line-height:1.2;\n  font-weight:800;\n  margin:0 0 6px;\n  letter-spacing:-0.01em;\n}\n.magyx-listicle .ts-scent-title .ts-num{color:var(--ts-accent);margin-right:6px;}\n\n.magyx-listicle .ts-review-module{\n  border:1px solid var(--ts-rule);\n  background:#fff;\n  border-radius:4px;\n  padding:22px;\n  margin:26px 0 12px;\n}\n.magyx-listicle .ts-review-label{\n  font-size:11px;\n  font-weight:800;\n  letter-spacing:0.2em;\n  text-transform:uppercase;\n  color:var(--ts-fg);\n  margin:0 0 8px;\n}\n.magyx-listicle .ts-review-product{\n  font-size:22px;\n  font-weight:700;\n  margin:0 0 4px;\n  text-decoration:underline;\n  text-underline-offset:4px;\n  letter-spacing:-0.005em;\n  line-height:1.25;\n}\n.magyx-listicle .ts-review-sub{\n  font-size:16px;\n  font-style:italic;\n  color:var(--ts-accent);\n  margin:0 0 18px;\n  font-weight:500;\n  line-height:1.4;\n}\n.magyx-listicle .ts-review-grid{\n  display:grid;\n  grid-template-columns:1fr 1fr;\n  gap:16px;\n  align-items:stretch;\n}\n.magyx-listicle .ts-review-image{\n  aspect-ratio:1/1;\n  background:#f3efe6 linear-gradient(135deg,#f7f3ea 0%,#e8e0d0 100%);\n  display:flex;\n  align-items:center;\n  justify-content:center;\n  color:#8a8170;\n  font-size:11px;\n  letter-spacing:0.08em;\n  text-transform:uppercase;\n  border-radius:2px;\n  text-align:center;\n  padding:8px;\n  overflow:hidden;\n}\n.magyx-listicle .ts-review-image img{width:100%;height:100%;object-fit:cover;display:block;}\n.magyx-listicle .ts-review-buy{\n  display:flex;\n  flex-direction:column;\n  justify-content:center;\n  gap:10px;\n}\n.magyx-listicle .ts-review-price-old{\n  text-align:center;\n  color:var(--ts-fg-muted);\n  font-size:14px;\n  font-weight:500;\n}\n.magyx-listicle .ts-review-price-amount{text-decoration:line-through;}\n.magyx-listicle .ts-review-price-label{\n  display:block;\n  font-size:10px;\n  font-weight:700;\n  letter-spacing:0.12em;\n  text-transform:uppercase;\n  color:var(--ts-fg-muted);\n  margin-top:3px;\n  text-decoration:none;\n}\n.magyx-listicle .ts-review-product-link{\n  display:block;\n  text-align:center;\n  font-size:13px;\n  color:var(--ts-fg-muted);\n  text-decoration:underline;\n  text-underline-offset:3px;\n  margin-top:4px;\n  transition:color 0.15s ease;\n}\n.magyx-listicle .ts-review-product-link:hover{color:var(--ts-accent);}\n.magyx-listicle .ts-review-buy .ts-cta{\n  width:100%;\n  padding:14px 16px;\n  font-size:15px;\n  box-sizing:border-box;\n}\n.magyx-listicle .ts-review-credit{\n  text-align:center;\n  font-size:12px;\n  color:var(--ts-fg-muted);\n  margin:8px 0 18px;\n}\n.magyx-listicle .ts-review-cards{\n  display:grid;\n  grid-template-columns:1fr 1fr;\n  gap:12px;\n  margin:0 0 18px;\n}\n.magyx-listicle .ts-review-card{\n  border:1px solid var(--ts-rule);\n  border-radius:4px;\n  padding:14px 16px;\n  background:var(--ts-bg);\n}\n.magyx-listicle .ts-review-card h4{\n  font-size:15px;\n  font-weight:700;\n  margin:0 0 10px;\n  text-align:center;\n}\n.magyx-listicle .ts-review-card ul{\n  margin:0;\n  padding-left:18px;\n  font-size:14px;\n  line-height:1.45;\n}\n.magyx-listicle .ts-review-card li{margin:0 0 8px;}\n.magyx-listicle .ts-review-card li:last-child{margin-bottom:0;}\n.magyx-listicle .ts-review-desc{\n  font-size:16px;\n  line-height:1.6;\n  margin:0;\n  color:var(--ts-fg);\n}\n\n.magyx-listicle .ts-summary{\n  font-size:19px;\n  line-height:1.55;\n  margin:0 0 28px;\n}\n.magyx-listicle .ts-summary strong{font-weight:700;}\n\n.magyx-listicle .ts-cta-wrap{\n  text-align:center;\n  margin:28px 0 8px;\n}\n.magyx-listicle .ts-cta{\n  display:inline-block;\n  background:var(--ts-accent);\n  color:#fff;\n  text-decoration:none;\n  font-weight:700;\n  font-size:17px;\n  letter-spacing:0.04em;\n  text-transform:uppercase;\n  padding:16px 38px;\n  border-radius:999px;\n  transition:background 0.15s ease;\n  text-align:center;\n  line-height:1.2;\n}\n.magyx-listicle .ts-cta:hover{background:var(--ts-accent-hover);color:#fff;}\n\n.magyx-listicle .ts-bundle{\n  background:#fff;\n  border-top:1px solid var(--ts-rule);\n  padding:48px 32px 64px;\n}\n.magyx-listicle .ts-bundle-inner{max-width:980px;margin:0 auto;}\n.magyx-listicle .ts-bundle-header{margin:0 0 28px;}\n.magyx-listicle .ts-bundle-grid{\n  display:grid;\n  grid-template-columns:1fr 1fr;\n  gap:36px;\n  align-items:center;\n}\n.magyx-listicle .ts-bundle-image{\n  background:var(--ts-bg);\n  border-radius:4px;\n  overflow:hidden;\n  aspect-ratio:1/1;\n}\n.magyx-listicle .ts-bundle-image img{width:100%;height:100%;object-fit:cover;display:block;}\n.magyx-listicle .ts-bundle-tags{display:flex;gap:8px;margin:0 0 14px;}\n.magyx-listicle .ts-tag-red{\n  background:var(--ts-accent);color:#fff;\n  font-size:12px;font-weight:800;\n  padding:5px 10px;border-radius:3px;\n  letter-spacing:0.03em;\n}\n.magyx-listicle .ts-tag-dark{\n  background:#1f3a2a;color:#fff;\n  font-size:12px;font-weight:800;\n  padding:5px 10px;border-radius:3px;\n  letter-spacing:0.03em;\n}\n.magyx-listicle .ts-bundle-title{\n  font-size:30px;line-height:1.15;font-weight:800;\n  margin:0 0 8px;letter-spacing:-0.01em;color:var(--ts-fg);\n}\n.magyx-listicle .ts-bundle-designer{\n  font-size:14px;color:var(--ts-fg-muted);\n  margin:0 0 14px;\n}\n.magyx-listicle .ts-eu-pill{\n  display:inline-block;\n  background:#e8f0f7;color:#1e4d8a;\n  font-size:12px;font-weight:700;\n  padding:6px 12px;border-radius:999px;\n  margin:0 0 16px;\n}\n.magyx-listicle .ts-bundle-desc{\n  font-size:16px;line-height:1.55;\n  color:var(--ts-fg);margin:0 0 18px;\n}\n.magyx-listicle .ts-bundle-price{\n  display:flex;align-items:baseline;gap:12px;\n  flex-wrap:wrap;margin:0 0 6px;\n}\n.magyx-listicle .ts-price-discount{\n  background:var(--ts-accent);color:#fff;\n  font-weight:800;font-size:13px;\n  padding:5px 9px;border-radius:3px;\n  letter-spacing:0.03em;\n  align-self:center;\n}\n.magyx-listicle .ts-price-now{\n  color:var(--ts-fg);font-weight:800;font-size:28px;\n  letter-spacing:-0.01em;\n}\n.magyx-listicle .ts-price-old{\n  color:var(--ts-fg-muted);text-decoration:line-through;\n  font-size:16px;\n}\n.magyx-listicle .ts-bundle-perflask{\n  font-size:14px;color:var(--ts-fg);\n  font-weight:600;margin:0 0 18px;\n}\n.magyx-listicle .ts-bundle-notes{\n  font-size:14px;color:var(--ts-fg-muted);\n  margin:0 0 22px;\n}\n.magyx-listicle .ts-bundle-notes strong{color:var(--ts-fg);font-weight:700;}\n.magyx-listicle .ts-bundle-bullets{\n  list-style:none;\n  margin:0 0 22px;\n  padding:0;\n  display:flex;\n  flex-direction:column;\n  gap:10px;\n}\n.magyx-listicle .ts-bundle-bullets li{\n  display:flex;\n  align-items:center;\n  gap:10px;\n  font-size:14px;\n  font-weight:600;\n  color:var(--ts-fg);\n}\n.magyx-listicle .ts-bundle-bullets svg{\n  width:14px;height:14px;\n  stroke:#1f3a2a;\n  fill:none;\n  stroke-width:3;\n  flex-shrink:0;\n}\n.magyx-listicle .ts-bundle-cta{\n  display:block;width:100%;text-align:center;\n  box-sizing:border-box;padding:18px 24px;\n  font-size:16px;\n}\n.magyx-listicle .ts-bundle-sub{\n  text-align:center;\n  margin:12px 0 0;\n  font-size:12px;\n  color:var(--ts-fg-muted);\n  letter-spacing:0.04em;\n}\n\n@media (max-width:540px){\n  .magyx-listicle{font-size:17px;}\n  .magyx-listicle .ts-pub-logo{font-size:24px;}\n  .magyx-listicle .ts-hero-title-band{padding:24px 24px 22px;}\n  .magyx-listicle .ts-hero-title-band h1{font-size:24px;line-height:1.22;margin-bottom:14px;}\n  .magyx-listicle .ts-byline{font-size:13px;gap:8px;}\n  .magyx-listicle .ts-byline-avatar{width:28px;height:28px;}\n  .magyx-listicle .ts-scent-title{font-size:22px;}\n  .magyx-listicle .ts-review-module{padding:18px 16px;margin:22px 0 10px;}\n  .magyx-listicle .ts-review-product{font-size:19px;}\n  .magyx-listicle .ts-review-sub{font-size:15px;margin-bottom:14px;}\n  .magyx-listicle .ts-review-grid{grid-template-columns:1fr;gap:12px;}\n  .magyx-listicle .ts-review-image{aspect-ratio:4/3;max-height:240px;}\n  .magyx-listicle .ts-review-cards{grid-template-columns:1fr;gap:10px;}\n  .magyx-listicle .ts-review-card{padding:12px 14px;}\n  .magyx-listicle .ts-review-card ul{font-size:13.5px;}\n  .magyx-listicle .ts-review-desc{font-size:15px;}\n  .magyx-listicle .ts-dek{font-size:17px;margin:18px 0 22px;}\n  .magyx-listicle .ts-summary{font-size:17px;}\n  .magyx-listicle .ts-container{padding:0 24px;}\n  .magyx-listicle .ts-article{padding:24px 0 50px;}\n  .magyx-listicle .ts-cta{font-size:15px;padding:14px 28px;}\n  .magyx-listicle .ts-rule{margin:26px 0;}\n  .magyx-listicle .ts-bundle{padding:36px 24px 48px;}\n  .magyx-listicle .ts-bundle-grid{grid-template-columns:1fr;gap:24px;}\n  .magyx-listicle .ts-bundle-title{font-size:22px;}\n  .magyx-listicle .ts-price-now{font-size:24px;}\n  .magyx-listicle .ts-price-discount{font-size:12px;padding:4px 8px;}\n  .magyx-listicle .ts-bundle-cta{font-size:15px;padding:16px 20px;}\n}\n@media (max-width:380px){\n  .magyx-listicle .ts-hero-title-band h1{font-size:22px;}\n  .magyx-listicle .ts-byline{font-size:12px;}\n  .magyx-listicle .ts-byline-sep{display:none;}\n}\n</style>\n\n<div class=\"magyx-listicle\">\n\n  <header class=\"ts-pub-header\">\n    <p class=\"ts-pub-eyebrow\">Advertisement</p>\n    <div class=\"ts-pub-logo\">The Style Guide</div>\n  </header>\n\n  <picture class=\"ts-hero-image\">\n    <source media=\"(max-width: 540px)\" srcset=\"https://cdn.shopify.com/s/files/1/0086/7932/5753/files/hero-mobile.png?v=1779478466\">\n    <img src=\"https://cdn.shopify.com/s/files/1/0086/7932/5753/files/hero-desktop.png?v=1779478467\" alt=\"Magyx men's fragrances for summer\" fetchpriority=\"high\">\n  </picture>\n\n  <section class=\"ts-hero-title-band\">\n    <h1>5 Men's Fragrances for Summer That Get More Compliments Than a 1,400 kr Bottle</h1>\n    <div class=\"ts-byline\">\n      <span class=\"ts-byline-avatar\"><img src=\"https://cdn.shopify.com/s/files/1/0086/7932/5753/files/author-avatar.png?v=1779478470\" alt=\"Erik Lundqvist\"></span>\n      <span>by Erik Lundqvist</span>\n      <span class=\"ts-byline-sep\">·</span>\n      <span>15 jul 2025</span>\n      <span class=\"ts-byline-sep\">·</span>\n      <span>4 min read</span>\n    </div>\n  </section>\n\n  <article class=\"ts-container ts-article\">\n\n    <p class=\"ts-dek\">These aren't random copies. They're perfumes with 21% extrait-level concentration, tested against the designer original. And they last over 12 hours.</p>\n\n    <hr class=\"ts-rule\">\n\n    <p>There's a dirty secret in the perfume world: most designer perfumes fade in 2 to 3 hours. You spray, leave the house, and by lunch you're wearing basically nothing. The bottle cost 1,400 kr. The result? You're invisible.</p>\n\n    <p>Here's what smart men have figured out: you can pay 10 times less for exactly the same scent and make it last over 12 hours. These are the five biggest men's fragrances of summer 2025. And the smarter alternative to each one.</p>\n\n    <hr class=\"ts-rule\">\n\n    <!-- SCENT 1 -->\n    <section class=\"ts-scent\">\n      <h2 class=\"ts-scent-title\"><span class=\"ts-num\">1.</span>Dior Sauvage Eau de Parfum</h2>\n\n      <p>Sauvage opens with icy Calabrian bergamot and black pepper. That sharp, cold-shower-on-a-mountain-in-the-morning impression that made it the world's best-selling men's cologne. Then warm ambroxan rolls in, close to the skin and magnetic.</p>\n\n      <div class=\"ts-review-module\">\n        <p class=\"ts-review-label\">Best alternative</p>\n        <h3 class=\"ts-review-product\">Bergamot Pepper Ambroxan</h3>\n        <p class=\"ts-review-sub\">For men who own the room.</p>\n\n        <div class=\"ts-review-grid\">\n          <div class=\"ts-review-image\"><img src=\"https://cdn.shopify.com/s/files/1/0086/7932/5753/files/dior-sauvage.webp?v=1779478462\" alt=\"Bergamot Pepper Ambroxan\"></div>\n          <div class=\"ts-review-buy\">\n            <div class=\"ts-review-price-old\">\n              <span class=\"ts-review-price-amount\">1,400 kr</span>\n              <span class=\"ts-review-price-label\">Designer price</span>\n            </div>\n            <a href=\"#ts-bundle-anchor\" class=\"ts-cta\">See Bundle — Save 55%</a>\n            <a href=\"https://magyx.co/sv-se/products/bergamot-pepper-ambroxan\" class=\"ts-review-product-link\">Buy this scent only</a>\n          </div>\n        </div>\n        <p class=\"ts-review-credit\">Photo: Magyx</p>\n\n        <div class=\"ts-review-cards\">\n          <div class=\"ts-review-card\">\n            <h4>How you come across</h4>\n            <ul>\n              <li>Confident, direct and physically present</li>\n              <li>The man wearing it doesn't need to announce himself</li>\n              <li>People read him first, ask questions later</li>\n            </ul>\n          </div>\n          <div class=\"ts-review-card\">\n            <h4>Best for</h4>\n            <ul>\n              <li>Everyday wear, the office, first dates</li>\n              <li>Outdoor events in summer</li>\n              <li>Meeting room or rooftop bar — works everywhere</li>\n            </ul>\n          </div>\n        </div>\n\n        <p class=\"ts-review-desc\">Bergamot Pepper Ambroxan opens the same way as the original. Crackling bergamot and pepper, then it settles onto the same warm, clean ambroxan base that makes people lean in toward you. At 21% concentration it stays on your skin through the heat, the commute and the evening.</p>\n      </div>\n    </section>\n\n    <hr class=\"ts-rule\">\n\n    <!-- SCENT 2 -->\n    <section class=\"ts-scent\">\n      <h2 class=\"ts-scent-title\"><span class=\"ts-num\">2.</span>Acqua di Gio Eau de Parfum</h2>\n\n      <p>Acqua di Gio has been the scent of summer for thirty years. Sea spray. Mediterranean air. The cool, clean impression of aquatic bergamot and marine freshness, then cedarwood that anchors it all in something that smells expensive and effortlessly masculine.</p>\n\n      <div class=\"ts-review-module\">\n        <p class=\"ts-review-label\">Best alternative</p>\n        <h3 class=\"ts-review-product\">Magic Perfume Nr. 221</h3>\n        <p class=\"ts-review-sub\">For men who don't need to prove anything.</p>\n\n        <div class=\"ts-review-grid\">\n          <div class=\"ts-review-image\"><img src=\"https://cdn.shopify.com/s/files/1/0086/7932/5753/files/acqua-di-gio.webp?v=1779478462\" alt=\"Magic Perfume Nr. 221\"></div>\n          <div class=\"ts-review-buy\">\n            <div class=\"ts-review-price-old\">\n              <span class=\"ts-review-price-amount\">1,100 kr</span>\n              <span class=\"ts-review-price-label\">Designer price</span>\n            </div>\n            <a href=\"#ts-bundle-anchor\" class=\"ts-cta\">See Bundle — Save 55%</a>\n            <a href=\"https://magyx.co/sv-se/products/magic-perfume-no-221m\" class=\"ts-review-product-link\">Buy this scent only</a>\n          </div>\n        </div>\n        <p class=\"ts-review-credit\">Photo: Magyx</p>\n\n        <div class=\"ts-review-cards\">\n          <div class=\"ts-review-card\">\n            <h4>How you come across</h4>\n            <ul>\n              <li>Clean, approachable and quietly well-groomed</li>\n              <li>Someone whose life is in order — without needing to prove it</li>\n            </ul>\n          </div>\n          <div class=\"ts-review-card\">\n            <h4>Best for</h4>\n            <ul>\n              <li>Relaxed daytime, beach days, outdoor lunches</li>\n              <li>Social weekend activities where the mood is easy</li>\n              <li>When you still want to make an impression</li>\n            </ul>\n          </div>\n        </div>\n\n        <p class=\"ts-review-desc\">Magic Perfume No. 221 opens with bergamot and fresh sage. The same instant flash of cool, coastal air on warm skin. The cedarwood base is clean and polished without turning sharp. In the summer heat at 21% concentration it doesn't collapse into a skin scent by hour three. It projects. All day.</p>\n      </div>\n    </section>\n\n    <hr class=\"ts-rule\">\n\n    <!-- SCENT 3 -->\n    <section class=\"ts-scent\">\n      <h2 class=\"ts-scent-title\"><span class=\"ts-num\">3.</span>Bleu de Chanel Eau de Parfum</h2>\n\n      <p>Bleu de Chanel is what people mean when they say 'expensive clean.' Grapefruit and lemon on the opening, slightly metallic and fresh. Then a heart of ginger, nutmeg and incense with real depth. The cedarwood base is polished and warm. Works at 7 in the morning. Works at 11 at night. Chanel knows this, which is why they keep it at 1,500 kr and never discount it.</p>\n\n      <div class=\"ts-review-module\">\n        <p class=\"ts-review-label\">Best alternative</p>\n        <h3 class=\"ts-review-product\">Magic Perfume Nr. 252</h3>\n        <p class=\"ts-review-sub\">For men with taste and zero need to show it.</p>\n\n        <div class=\"ts-review-grid\">\n          <div class=\"ts-review-image\"><img src=\"https://cdn.shopify.com/s/files/1/0086/7932/5753/files/bleu-de-chanel.webp?v=1779478462\" alt=\"Magic Perfume Nr. 252\"></div>\n          <div class=\"ts-review-buy\">\n            <div class=\"ts-review-price-old\">\n              <span class=\"ts-review-price-amount\">1,500 kr</span>\n              <span class=\"ts-review-price-label\">Designer price</span>\n            </div>\n            <a href=\"#ts-bundle-anchor\" class=\"ts-cta\">See Bundle — Save 55%</a>\n            <a href=\"https://magyx.co/sv-se/products/magic-perfume-no-252m\" class=\"ts-review-product-link\">Buy this scent only</a>\n          </div>\n        </div>\n        <p class=\"ts-review-credit\">Photo: Magyx</p>\n\n        <div class=\"ts-review-cards\">\n          <div class=\"ts-review-card\">\n            <h4>How you come across</h4>\n            <ul>\n              <li>Sophisticated and dependable</li>\n              <li>Someone with taste and self-discipline</li>\n              <li>Not flashy, not trying too hard — just genuinely well-groomed</li>\n            </ul>\n          </div>\n          <div class=\"ts-review-card\">\n            <h4>Best for</h4>\n            <ul>\n              <li>The office, business meetings, dinners with clients</li>\n              <li>Smart evenings out</li>\n              <li>Morning meeting to evening dinner — without missing a step</li>\n            </ul>\n          </div>\n        </div>\n\n        <p class=\"ts-review-desc\">Magic Perfume No. 252 gives you the same citrus-woody elegance. Clean opening, aromatic heart, warm dry-down. The perfume that makes you smell effortlessly well-dressed without the bill.</p>\n      </div>\n    </section>\n\n    <hr class=\"ts-rule\">\n\n    <!-- SCENT 4 -->\n    <section class=\"ts-scent\">\n      <h2 class=\"ts-scent-title\"><span class=\"ts-num\">4.</span>Creed Aventus Eau de Parfum</h2>\n\n      <p>Aventus is the holy grail. Pineapple, blackcurrant and bergamot burst open bright and fruity. A combination that shouldn't work but absolutely does. Then comes birch and patchouli with real smokiness. Then oakmoss: rich, complex, unmistakably powerful. It's the perfume that stops strangers mid-sentence. It costs 4,000 kr.</p>\n\n      <div class=\"ts-review-module\">\n        <p class=\"ts-review-label\">Best alternative</p>\n        <h3 class=\"ts-review-product\">Pineapple Smoke Vanilla</h3>\n        <p class=\"ts-review-sub\">For men who run the room.</p>\n\n        <div class=\"ts-review-grid\">\n          <div class=\"ts-review-image\"><img src=\"https://cdn.shopify.com/s/files/1/0086/7932/5753/files/aventus.png?v=1779478466\" alt=\"Pineapple Smoke Vanilla\"></div>\n          <div class=\"ts-review-buy\">\n            <div class=\"ts-review-price-old\">\n              <span class=\"ts-review-price-amount\">4,000 kr</span>\n              <span class=\"ts-review-price-label\">Designer price</span>\n            </div>\n            <a href=\"#ts-bundle-anchor\" class=\"ts-cta\">See Bundle — Save 55%</a>\n            <a href=\"https://magyx.co/sv-se/products/pineapple-smoke-vanilla-50-ml-1-7-fl-oz\" class=\"ts-review-product-link\">Buy this scent only</a>\n          </div>\n        </div>\n        <p class=\"ts-review-credit\">Photo: Magyx</p>\n\n        <div class=\"ts-review-cards\">\n          <div class=\"ts-review-card\">\n            <h4>How you come across</h4>\n            <ul>\n              <li>Powerful, successful and impossible to ignore</li>\n              <li>The man who walks into a room and changes the energy</li>\n              <li>People remember you after you've left</li>\n            </ul>\n          </div>\n          <div class=\"ts-review-card\">\n            <h4>Best for</h4>\n            <ul>\n              <li>Evening events and special occasions</li>\n              <li>Dates where you want to make an impression</li>\n              <li>Networking events — when it matters to be memorable</li>\n            </ul>\n          </div>\n        </div>\n\n        <p class=\"ts-review-desc\">Pineapple Smoke Vanilla takes the warm, spicy-woody architecture and runs with it. Rich and spiced on the opening, clean and masculine through the dry-down, with the projection and longevity that extrait level truly delivers. Aventus' compliment-magnet DNA.</p>\n      </div>\n    </section>\n\n    <hr class=\"ts-rule\">\n\n    <!-- SCENT 5 -->\n    <section class=\"ts-scent\">\n      <h2 class=\"ts-scent-title\"><span class=\"ts-num\">5.</span>YSL Y Eau de Parfum</h2>\n\n      <p>YSL Y is the modern everyday driver. Apple, ginger and bergamot opening. Fresh, clean, slightly sweet. The sage and juniper heart is crisp. The tonka bean base adds warmth without going heavy in summer. It's the cologne you spray without thinking and somehow everyone comments on it all day.</p>\n\n      <div class=\"ts-review-module\">\n        <p class=\"ts-review-label\">Best alternative</p>\n        <h3 class=\"ts-review-product\">Lavender Mint (No. 034)</h3>\n        <p class=\"ts-review-sub\">For men who attract without trying.</p>\n\n        <div class=\"ts-review-grid\">\n          <div class=\"ts-review-image\"><img src=\"https://cdn.shopify.com/s/files/1/0086/7932/5753/files/ysl-y-edp.png?v=1779478466\" alt=\"Lavender Mint (No. 034)\"></div>\n          <div class=\"ts-review-buy\">\n            <div class=\"ts-review-price-old\">\n              <span class=\"ts-review-price-amount\">1,200 kr</span>\n              <span class=\"ts-review-price-label\">Designer price</span>\n            </div>\n            <a href=\"#ts-bundle-anchor\" class=\"ts-cta\">See Bundle — Save 55%</a>\n            <a href=\"https://magyx.co/sv-se/products/bergamot-sage-cedar-50-ml\" class=\"ts-review-product-link\">Buy this scent only</a>\n          </div>\n        </div>\n        <p class=\"ts-review-credit\">Photo: Magyx</p>\n\n        <div class=\"ts-review-cards\">\n          <div class=\"ts-review-card\">\n            <h4>How you come across</h4>\n            <ul>\n              <li>Relaxed, likeable and naturally attractive</li>\n              <li>Doesn't seem to be trying to impress — which is exactly why he impresses everyone</li>\n            </ul>\n          </div>\n          <div class=\"ts-review-card\">\n            <h4>Best for</h4>\n            <ul>\n              <li>Everyday wear all day, gym-to-lunch</li>\n              <li>Casual hangouts and summer festivals</li>\n              <li>When you want to smell good without overthinking it</li>\n            </ul>\n          </div>\n        </div>\n\n        <p class=\"ts-review-desc\">Lavender Mint opens with cool lavender and mint. That flash of cold green on warm skin is like the first sip of something ice-cold on a hot afternoon. The vanilla finish is soft and clean. At 21% concentration it lasts the whole workday, the commute and into the evening.</p>\n      </div>\n    </section>\n\n    <hr class=\"ts-rule\">\n\n    <!-- SUMMARY + FINAL CTA -->\n    <p class=\"ts-summary\"><strong>The math is simple.</strong> Five designer originals would cost you over 9,000 kr. Five MagyxCo scents cost 634.95 kr with higher oil concentration, longer longevity and scent profiles built to match the originals note for note.</p>\n\n    <div class=\"ts-cta-wrap\" style=\"margin-top:36px;margin-bottom:12px;\">\n      <a href=\"https://magyx.co/sv-se/products/5-x-100ml-perfume-bottles\" class=\"ts-cta\">Try them at Magyx.co</a>\n    </div>\n\n  </article>\n\n  <section class=\"ts-bundle\" id=\"ts-bundle-anchor\">\n    <div class=\"ts-bundle-inner\">\n      <div class=\"ts-bundle-header\">\n        <div class=\"ts-bundle-tags\">\n          <span class=\"ts-tag-red\">55% Off</span>\n          <span class=\"ts-tag-dark\">Bestseller</span>\n        </div>\n        <h2 class=\"ts-bundle-title\">The Men's Summer Fragrance Wardrobe — For Every Occasion</h2>\n      </div>\n      <div class=\"ts-bundle-grid\">\n        <div class=\"ts-bundle-image\">\n          <img src=\"https://magyx.co/cdn/shop/files/5bottlesswedish2026.png?v=1767668462\" alt=\"Magyx 5-bottle bundle\">\n        </div>\n        <div class=\"ts-bundle-copy\">\n          <p class=\"ts-bundle-designer\">(Designer price: 7,402.20 kr)</p>\n          <span class=\"ts-eu-pill\">🇪🇺 Made in the EU</span>\n          <p class=\"ts-bundle-desc\">A scent for every mood = never get bored. Plus each 30 ml bottle lasts 2–4 months with daily use. So that's over a year of smelling amazing.</p>\n          <div class=\"ts-bundle-price\">\n            <span class=\"ts-price-old\">1,301.00 kr</span>\n            <span class=\"ts-price-now\">586.00 kr</span>\n            <span class=\"ts-price-discount\">−55%</span>\n          </div>\n          <p class=\"ts-bundle-perflask\">Only 117.20 kr per bottle</p>\n          <p class=\"ts-bundle-notes\"><strong>Top notes:</strong> Pineapple · Bergamot · Blackcurrant</p>\n          <ul class=\"ts-bundle-bullets\">\n            <li><svg viewBox=\"0 0 24 24\"><polyline points=\"4,12 10,18 20,6\"/></svg> Up to 21% EDP concentration</li>\n            <li><svg viewBox=\"0 0 24 24\"><polyline points=\"4,12 10,18 20,6\"/></svg> 12+ hours of longevity</li>\n            <li><svg viewBox=\"0 0 24 24\"><polyline points=\"4,12 10,18 20,6\"/></svg> EU-made · IFRA-certified</li>\n            <li><svg viewBox=\"0 0 24 24\"><polyline points=\"4,12 10,18 20,6\"/></svg> Clean Label cosmetics</li>\n            <li><svg viewBox=\"0 0 24 24\"><polyline points=\"4,12 10,18 20,6\"/></svg> Vegan · Cruelty-free</li>\n          </ul>\n          <a href=\"https://magyx.co/sv-se/products/5-x-100ml-perfume-bottles\" class=\"ts-cta ts-bundle-cta\">Find Your Scents — Buy The Bundle 586 kr</a>\n          <p class=\"ts-bundle-sub\">Free shipping over 483 kr · 60-day open purchase · Easy returns</p>\n        </div>\n      </div>\n    </div>\n  </section>\n\n</div>",
+        "color_scheme": "",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "custom_liquid_gXRa6j": {
+      "type": "custom-liquid",
+      "name": "Hide Header/Footer",
+      "settings": {
+        "custom_liquid": "{% comment %}\n  Magyx listicle — page chrome hider.\n\n  Hides the theme's header, footer, and announcement bar on the current page only.\n  Custom Liquid sections only render on pages they're added to, so the CSS\n  scopes itself naturally — other pages are unaffected.\n\n  USAGE:\n  1. Online Store → Themes → Customize → open the page that has the listicle.\n  2. Add section → Custom Liquid\n  3. Drag this section to the TOP of the page (above everything else).\n  4. Paste this entire file into the textarea.\n  5. Save.\n\n  If something on your theme isn't getting hidden, paste its selector into the\n  rule below. To find selectors: right-click the element → Inspect.\n{% endcomment %}\n\n<style>\n  /* OS 2.0 theme groups (Dawn, Sense, Refresh, Studio, Crave, Origin, Trade,\n     Publisher, Colorblock, Taste, Ride, Spotlight, etc.) */\n  .shopify-section-group-header-group,\n  .shopify-section-group-footer-group,\n  .shopify-section-group-announcement-group,\n  .shopify-section-group-aside-group,\n\n  /* Vintage themes + common explicit IDs/classes */\n  #shopify-section-header,\n  #shopify-section-footer,\n  #shopify-section-announcement-bar,\n  .shopify-section-header,\n  .shopify-section-footer,\n  .shopify-section-announcement-bar,\n\n  /* Direct element fallbacks */\n  body > header,\n  body > footer,\n  .site-header,\n  .site-footer,\n  .header-wrapper,\n  .footer-wrapper,\n  .announcement-bar,\n  .announcement,\n\n  /* Newsletter popups & promo banners that float */\n  .promo-bar,\n  .header__promo,\n  .top-bar,\n  .topbar,\n  #topbar,\n  [class*=\"topbar\"],\n  [id*=\"topbar\"],\n  .shopify-section[id*=\"topbar\"],\n\n  /* Sale / countdown / timer banner sections (Payday sale, BFCM, etc.) */\n  [class*=\"countdown\"],\n  [class*=\"timer-bar\"],\n  [class*=\"sale-bar\"],\n  [class*=\"salebar\"],\n  [class*=\"payday\"],\n  [class*=\"lonedag\"],\n  [class*=\"lönedag\"],\n  [id*=\"countdown\"],\n  [id*=\"timer-bar\"],\n  [id*=\"payday\"],\n  [id*=\"salebar\"],\n  .shopify-section[id*=\"countdown\"],\n  .shopify-section[id*=\"timer\"],\n  .shopify-section[id*=\"payday\"],\n  .shopify-section[id*=\"sale-bar\"],\n  .shopify-section[id*=\"promo\"],\n  .shopify-section[id*=\"banner\"]:not([id*=\"hero\"]) {\n    display: none !important;\n    visibility: hidden !important;\n    height: 0 !important;\n    margin: 0 !important;\n    padding: 0 !important;\n    overflow: hidden !important;\n  }\n\n  /* Reset main content offsets so the listicle starts at the very top */\n  body,\n  main,\n  #MainContent,\n  .main-content,\n  .page-width {\n    padding-top: 0 !important;\n    margin-top: 0 !important;\n  }\n\n  /* Remove default body padding some themes set for sticky headers */\n  body {\n    padding-top: 0 !important;\n  }\n</style>",
+        "color_scheme": "",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "massive_review_xhTApH": {
+      "type": "massive-review",
+      "blocks": {
+        "review_zAw7dR": {
+          "type": "review",
+          "settings": {
+            "review_image": "shopify://shop_images/2_24.png",
+            "content": "<p>\"I really like this brand and the fragrance are amazing..\"</p>",
+            "author": "Lilian M.",
+            "date": "1 day ago",
+            "rating": 5,
+            "show_verified_badge": true,
+            "product": ""
+          }
+        },
+        "review_yEDVJD": {
+          "type": "review",
+          "settings": {
+            "content": "<p>\"Easy process throw payment and trust worthy website\"</p>",
+            "author": "Robinson K.",
+            "date": "2 days ago",
+            "rating": 5,
+            "show_verified_badge": true,
+            "product": ""
+          }
+        },
+        "review_yCzQxH": {
+          "type": "review",
+          "settings": {
+            "review_image": "shopify://shop_images/1_24.png",
+            "content": "<p>\"Supergood alternativ, lasting long and is the same like the more expansive perfumes. Highly recommend to test you will not be disappointed.\"</p>",
+            "author": "Maria M",
+            "date": "2 days ago",
+            "rating": 5,
+            "show_verified_badge": true,
+            "product": ""
+          }
+        },
+        "review_XfwcAY": {
+          "type": "review",
+          "settings": {
+            "content": "<p>\"I had the opportunity to try their perfumes, they have a great price, a wide range of fragrances but above all their perfumes are persistent and long-lasting highly recommended!\"</p>",
+            "author": "Clara P.",
+            "date": "3 days ago",
+            "rating": 5,
+            "show_verified_badge": true,
+            "product": ""
+          }
+        },
+        "review_8jw9Px": {
+          "type": "review",
+          "settings": {
+            "review_image": "shopify://shop_images/6_14.png",
+            "content": "<p>\"High quality product for only $29! The perfume smells exactly like the original and it last for hours!<br/>Recommended \"</p>",
+            "author": "Adele S.",
+            "date": "2 Weeks ago",
+            "rating": 5,
+            "show_verified_badge": true,
+            "product": ""
+          }
+        },
+        "review_UPwGBF": {
+          "type": "review",
+          "settings": {
+            "review_image": "shopify://shop_images/5_12.png",
+            "content": "<p>\"I bought one perfume inspired by mademoiselle , and it’s fantastic . It last long on the skin and the smell it’s absolutely identical. \"</p>",
+            "author": "Jenniffer W.",
+            "date": "3 Weeks ago",
+            "rating": 4,
+            "show_verified_badge": true,
+            "product": ""
+          }
+        },
+        "review_icFmQQ": {
+          "type": "review",
+          "settings": {
+            "content": "<p>\"the perfume is mega-true, beautiful scent, I fell in love with it\"</p>",
+            "author": "Tiana N.",
+            "date": "3 Weeks ago",
+            "rating": 4,
+            "show_verified_badge": true,
+            "product": ""
+          }
+        },
+        "review_RnXXg9": {
+          "type": "review",
+          "settings": {
+            "content": "<p>\"I love it. I love it, one of my favourite!\"</p>",
+            "author": "Michael T.",
+            "date": "2 Weeks ago",
+            "rating": 4,
+            "show_verified_badge": true,
+            "product": ""
+          }
+        },
+        "review_aThE8h": {
+          "type": "review",
+          "settings": {
+            "content": "<p>\"Best of the BEST!\"</p>",
+            "author": "Alex W.",
+            "date": "3 Weeks ago",
+            "rating": 5,
+            "show_verified_badge": true,
+            "product": ""
+          }
+        },
+        "review_YXwWcc": {
+          "type": "review",
+          "settings": {
+            "review_image": "shopify://shop_images/1_25.png",
+            "content": "<p>\"I loooove these perfumes! Each one I received smells divinely good. Some, I would say, are better than the original.\"</p>",
+            "author": "Christine N.",
+            "date": "3 Months ago",
+            "rating": 4,
+            "show_verified_badge": false,
+            "product": ""
+          }
+        },
+        "review_nQ6MLV": {
+          "type": "review",
+          "settings": {
+            "content": "<p>\"Woow this is my second order I love it \"</p>",
+            "author": "Lionel M.",
+            "date": "3 Weeks ago",
+            "rating": 5,
+            "show_verified_badge": true,
+            "product": ""
+          }
+        },
+        "review_y8tq9b": {
+          "type": "review",
+          "settings": {
+            "review_image": "shopify://shop_images/7_6.png",
+            "content": "<p>\"Quick service, Great products 🥰🥰🥰\"</p>",
+            "author": "Lidis A.",
+            "date": "2 months ago",
+            "rating": 5,
+            "show_verified_badge": true,
+            "product": ""
+          }
+        },
+        "review_wbXdLy": {
+          "type": "review",
+          "settings": {
+            "content": "<p>\"It smells very good, but it doesn't last as long as it should.\"</p>",
+            "author": "Terence M.",
+            "date": "2 months ago",
+            "rating": 5,
+            "show_verified_badge": false,
+            "product": ""
+          }
+        },
+        "review_bjRzPy": {
+          "type": "review",
+          "settings": {
+            "content": "<p>\"It smells very good, I'm fascinated by it.\"</p>",
+            "author": "Castillo B.",
+            "date": "3 months ago",
+            "rating": 5,
+            "show_verified_badge": true,
+            "product": ""
+          }
+        },
+        "review_639hbA": {
+          "type": "review",
+          "settings": {
+            "content": "<p>\"Very good! I am going to recommend this yo all my friend \"</p>",
+            "author": "Kamila G.",
+            "date": "3 Months ago",
+            "rating": 5,
+            "show_verified_badge": true,
+            "product": ""
+          }
+        },
+        "review_G3HzBj": {
+          "type": "review",
+          "settings": {
+            "review_image": "shopify://shop_images/3_16.png",
+            "content": "<p>\"I love your perfumes♥️♥️\"</p>",
+            "author": "Robinson D.",
+            "date": "4 months ago",
+            "rating": 4,
+            "show_verified_badge": false,
+            "product": ""
+          }
+        },
+        "review_KK6jhW": {
+          "type": "review",
+          "settings": {
+            "content": "<p>\"The smell was consistant while wearing it for a long while. No complains there\"</p>",
+            "author": "Michael R.",
+            "date": "4 months ago",
+            "rating": 5,
+            "show_verified_badge": true,
+            "product": ""
+          }
+        },
+        "review_HjyT3p": {
+          "type": "review",
+          "settings": {
+            "content": "<p>\"Very high quality!!\"</p>",
+            "author": "Alvarez P.",
+            "date": "4 months ago",
+            "rating": 4,
+            "show_verified_badge": true,
+            "product": ""
+          }
+        },
+        "review_6Bhttk": {
+          "type": "review",
+          "settings": {
+            "content": "<p>\"These smells amazing , good price fast delivery.\"</p>",
+            "author": "Anne E.",
+            "date": "4 months ago",
+            "rating": 4,
+            "show_verified_badge": true,
+            "product": ""
+          }
+        },
+        "review_8FxpJj": {
+          "type": "review",
+          "settings": {
+            "content": "<p>\"Good Order and really good Delivery service\"</p>",
+            "author": "Lucy R",
+            "date": "4 months ago",
+            "rating": 5,
+            "show_verified_badge": true,
+            "product": ""
+          }
+        },
+        "review_JRzxRP": {
+          "type": "review",
+          "settings": {
+            "review_image": "shopify://shop_images/Magyx_UGC_07.png",
+            "content": "<p>\"I am satisfied with Magic Perfume. The perfume smells very similar to the original and holds well. The packaging is neat and the bottle is beautiful. Overall, it's an excellent option if you want a quality perfume at a reasonable price.\"</p>",
+            "author": "Alina M",
+            "date": "5 months ago",
+            "rating": 5,
+            "show_verified_badge": false,
+            "product": ""
+          }
+        },
+        "review_9T4pt3": {
+          "type": "review",
+          "settings": {
+            "review_image": "shopify://shop_images/Magyx_UGC_10.png",
+            "content": "<p>\"Their products are good quality at a very affordable price.\"</p>",
+            "author": "Amanda G",
+            "date": "5 months ago",
+            "rating": 4,
+            "show_verified_badge": true,
+            "product": ""
+          }
+        },
+        "review_aietxq": {
+          "type": "review",
+          "settings": {
+            "review_image": "shopify://shop_images/Magyx_UGC_29.png",
+            "content": "<p>\"Superb fragrances, excellent products, no problem.\"</p>",
+            "author": "Alex S.",
+            "date": "6 months ago",
+            "rating": 5,
+            "show_verified_badge": true,
+            "product": ""
+          }
+        },
+        "review_YtFw34": {
+          "type": "review",
+          "settings": {
+            "review_image": "shopify://shop_images/Magyx_UGC_02.png",
+            "content": "<p>\"The product arrived well packaged. The perfume wasn't broken, hadn't leaked and was in good condition. The perfume is perfect and didn't smell bad. I love it, high quality.\"</p>",
+            "author": "Roxanne S",
+            "date": "5 months ago",
+            "rating": 5,
+            "show_verified_badge": true,
+            "product": ""
+          }
+        },
+        "review_WnPpEf": {
+          "type": "review",
+          "settings": {
+            "review_image": "shopify://shop_images/Magyx_UGC_28.png",
+            "content": "<p>\"From service to product, the experience was phenomenal. I will happily buy again anytime.\"</p>",
+            "author": "Benjamin M",
+            "date": "5 months ago",
+            "rating": 5,
+            "show_verified_badge": false,
+            "product": ""
+          }
+        },
+        "review_jRgbTk": {
+          "type": "review",
+          "settings": {
+            "review_image": "shopify://shop_images/Magyx_UGC_13.png",
+            "content": "<p>\"Excellent product! Super affordable alternative to brand name perfumes. The fragrance lasts a long time and you get your money's worth.\"</p>",
+            "author": "EM",
+            "date": "4 months ago",
+            "rating": 5,
+            "show_verified_badge": true,
+            "product": ""
+          }
+        },
+        "review_GbhyC3": {
+          "type": "review",
+          "settings": {
+            "review_image": "shopify://shop_images/Magyx_UGC_18.png",
+            "content": "<p>\"Oh my God, I loved it. Wow! Exactly like the original and it lasts all day! ❤️‍🔥❤️‍🔥\"</p>",
+            "author": "Marianne",
+            "date": "4 months ago",
+            "rating": 4,
+            "show_verified_badge": true,
+            "product": ""
+          }
+        },
+        "review_C3bd9b": {
+          "type": "review",
+          "settings": {
+            "review_image": "shopify://shop_images/Magyx_UGC_27.png",
+            "content": "<p>\"The fragrance of this product is super rich and I love how beautiful the bottle and its design are. I would really use it again.\"</p>",
+            "author": "Eliannys Y",
+            "date": "7 months ago",
+            "rating": 5,
+            "show_verified_badge": true,
+            "product": ""
+          }
+        },
+        "review_NYCPwJ": {
+          "type": "review",
+          "settings": {
+            "review_image": "shopify://shop_images/Magyx_UGC_16.png",
+            "content": "<p>\"I like it! I appreciate this fragrance. Good smell.\"</p>",
+            "author": "Metrine M",
+            "date": "7 months ago",
+            "rating": 5,
+            "show_verified_badge": false,
+            "product": ""
+          }
+        },
+        "review_EniFK9": {
+          "type": "review",
+          "settings": {
+            "review_image": "shopify://shop_images/Magyx_UGC_30.png",
+            "content": "<p>\"Excellent product, smells fantastically good. I always have people asking me about my fragrance and what I use.\"</p>",
+            "author": "Damario R",
+            "date": "7 months ago",
+            "rating": 5,
+            "show_verified_badge": true,
+            "product": ""
+          }
+        },
+        "review_r8Gi8i": {
+          "type": "review",
+          "settings": {
+            "review_image": "shopify://shop_images/Magyx_UGC_12.png",
+            "content": "<p>\"Super brand and excellent products!\"</p>",
+            "author": "Juliana B",
+            "date": "4 months ago",
+            "rating": 5,
+            "show_verified_badge": true,
+            "product": ""
+          }
+        },
+        "review_LRkiUH": {
+          "type": "review",
+          "settings": {
+            "review_image": "shopify://shop_images/Magyx_UGC_17.png",
+            "content": "<p>\"After a small delay, I finally received my Magic Perfume perfumes and they are exactly as they should be! I can hardly believe how much they match the originals — for reference, I received \"Ylang Ylang Rose Jasmine\" and \"Aldehydes Rose Sandalwood\", these are really beautiful fragrances.\"</p>",
+            "author": "Gabriella K",
+            "date": "7 months ago",
+            "rating": 5,
+            "show_verified_badge": true,
+            "product": ""
+          }
+        },
+        "review_Vb9HW7": {
+          "type": "review",
+          "settings": {
+            "review_image": "shopify://shop_images/Magyx_UGC_33.png",
+            "content": "<p>\"Very good brand, I love the packaging and the aroma.\"</p>",
+            "author": "Rosa B",
+            "date": "7 months ago",
+            "rating": 5,
+            "show_verified_badge": true,
+            "product": ""
+          }
+        },
+        "review_JdiNyt": {
+          "type": "review",
+          "settings": {
+            "review_image": "shopify://shop_images/Magyx_UGC_31.png",
+            "content": "<p>\"I'm a big fan of cologne, so I'm picky about clones, but Magic Perfume completely convinced me. I ordered the Sauvage clone from the homepage and immediately recognized the scent when spraying it. I now own 4 Magic Perfume perfumes in total and I love them all. I have 3 more on the way thanks to their bundle deals. If you want something that works on a small budget and offers designer performance, I can't recommend them enough.\"</p>",
+            "author": "Sean P",
+            "date": "4 months ago",
+            "rating": 5,
+            "show_verified_badge": true,
+            "product": ""
+          }
+        },
+        "review_bNVhH6": {
+          "type": "review",
+          "settings": {
+            "review_image": "shopify://shop_images/Magyx_UGC_32.png",
+            "content": "<p>\"I am very satisfied with the perfume from this brand, they have such a beautiful perfume like the original and cheaper, I will definitely buy again.\"</p>",
+            "author": "Angel",
+            "date": "8 months ago",
+            "rating": 5,
+            "show_verified_badge": true,
+            "product": ""
+          }
+        },
+        "review_PiLjha": {
+          "type": "review",
+          "settings": {
+            "review_image": "shopify://shop_images/Magyx_UGC_35.png",
+            "content": "<p>\"This summer, I received a sample of Creed Aventus as a gift and really liked it, but I couldn't buy the original, so I looked for dupes. I found Magic Perfume and ordered \"Pineapple Smoke Vanilla\", it arrived in about a week and smells really good, as close to my original sample, very satisfied with the product, especially for the price.\"</p>",
+            "author": "Hwan H",
+            "date": "8 months ago",
+            "rating": 5,
+            "show_verified_badge": true,
+            "product": ""
+          }
+        },
+        "review_AEQxcH": {
+          "type": "review",
+          "settings": {
+            "review_image": "shopify://shop_images/Magyx_UGC_34.png",
+            "content": "<p>\"I tried their 7.5 ml samples and to my great surprise, I loved them. I placed a 2nd order, but this time I took the larger bottles. I must say I received my orders on time and they delivered the fragrances I love!\"</p>",
+            "author": "Lauri E",
+            "date": "8 months ago",
+            "rating": 5,
+            "show_verified_badge": true,
+            "product": ""
+          }
+        }
+      },
+      "block_order": [
+        "review_zAw7dR",
+        "review_yEDVJD",
+        "review_yCzQxH",
+        "review_XfwcAY",
+        "review_8jw9Px",
+        "review_UPwGBF",
+        "review_icFmQQ",
+        "review_RnXXg9",
+        "review_aThE8h",
+        "review_YXwWcc",
+        "review_nQ6MLV",
+        "review_y8tq9b",
+        "review_wbXdLy",
+        "review_bjRzPy",
+        "review_639hbA",
+        "review_G3HzBj",
+        "review_KK6jhW",
+        "review_HjyT3p",
+        "review_6Bhttk",
+        "review_8FxpJj",
+        "review_JRzxRP",
+        "review_9T4pt3",
+        "review_aietxq",
+        "review_YtFw34",
+        "review_WnPpEf",
+        "review_jRgbTk",
+        "review_GbhyC3",
+        "review_C3bd9b",
+        "review_NYCPwJ",
+        "review_EniFK9",
+        "review_r8Gi8i",
+        "review_LRkiUH",
+        "review_Vb9HW7",
+        "review_JdiNyt",
+        "review_bNVhH6",
+        "review_PiLjha",
+        "review_AEQxcH"
+      ],
+      "name": "Massive Review",
+      "settings": {
+        "background_color": "#fcfbf9",
+        "heading": "Loved by 10,000+ Customers",
+        "review_text": "10,000+",
+        "button_text": "See more reviews",
+        "button_link": "",
+        "padding_top": 72,
+        "padding_bottom": 72
+      },
+      "disabled": true
+    }
+  },
+  "order": [
+    "main",
+    "custom_liquid_cJnqgV",
+    "custom_liquid_gXRa6j",
+    "massive_review_xhTApH"
+  ]
+}

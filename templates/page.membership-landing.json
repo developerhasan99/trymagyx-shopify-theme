@@ -1,0 +1,290 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {}
+    },
+    "membership_landing": {
+      "type": "membership-landing",
+      "blocks": {
+        "step_shop": {
+          "type": "step",
+          "settings": {
+            "title": "Shop",
+            "description": "Add any scent you like to your cart: a single 30 ml or a whole fragrance wardrobe."
+          }
+        },
+        "step_join": {
+          "type": "step",
+          "settings": {
+            "title": "Join",
+            "description": "Select ”Join VIP” in the cart to activate your perks. Your first month costs only €1.95."
+          }
+        },
+        "step_save": {
+          "type": "step",
+          "settings": {
+            "title": "Save",
+            "description": "Save up to 30% on your order. Welcome to Tryscent+ VIP!"
+          }
+        },
+        "tier_1": {
+          "type": "discount_tier",
+          "settings": {
+            "label": "Buy 1–2 items",
+            "value": 10
+          }
+        },
+        "tier_2": {
+          "type": "discount_tier",
+          "settings": {
+            "label": "Buy 3–5 items",
+            "value": 25
+          }
+        },
+        "tier_3": {
+          "type": "discount_tier",
+          "settings": {
+            "label": "Buy 6+ items",
+            "value": 30
+          }
+        },
+        "perk_credit": {
+          "type": "perk",
+          "settings": {
+            "icon": "credit",
+            "title": "€14.99 in monthly store credit",
+            "description": "Your monthly fee comes back to you as store credit. Use it on whatever you like."
+          }
+        },
+        "perk_drops": {
+          "type": "perk",
+          "settings": {
+            "icon": "calendar",
+            "title": "Early access to new drops",
+            "description": "Shop every new scent before it's released to the public. First pick, every time."
+          }
+        },
+        "perk_shipping": {
+          "type": "perk",
+          "settings": {
+            "icon": "shipping",
+            "title": "Free priority shipping",
+            "description": "Free for members. Your order ships first, every time."
+          }
+        },
+        "perk_support": {
+          "type": "perk",
+          "settings": {
+            "icon": "support",
+            "title": "VIP customer service",
+            "description": "Skip the line. Real people, real fragrance advice, fast."
+          }
+        },
+        "perk_perfume": {
+          "type": "perk",
+          "settings": {
+            "icon": "gift",
+            "title": "Personal perfume every three months",
+            "description": "Work one-on-one with a master perfumer to create a scent that is yours alone, delivered to your door every three months."
+          }
+        },
+        "cmp_discount": {
+          "type": "comparison_row",
+          "settings": {
+            "label": "Save up to 30% on every order",
+            "member_has": true,
+            "guest_has": false
+          }
+        },
+        "cmp_credit": {
+          "type": "comparison_row",
+          "settings": {
+            "label": "€14.99 in monthly store credit",
+            "member_has": true,
+            "guest_has": false
+          }
+        },
+        "cmp_drops": {
+          "type": "comparison_row",
+          "settings": {
+            "label": "Early access to new drops",
+            "member_has": true,
+            "guest_has": false
+          }
+        },
+        "cmp_shipping": {
+          "type": "comparison_row",
+          "settings": {
+            "label": "Priority shipping + VIP support",
+            "member_has": true,
+            "guest_has": false
+          }
+        },
+        "cmp_perfume": {
+          "type": "comparison_row",
+          "settings": {
+            "label": "Personal perfume gifts",
+            "member_has": true,
+            "guest_has": false
+          }
+        }
+      },
+      "block_order": [
+        "step_shop",
+        "step_join",
+        "step_save",
+        "tier_1",
+        "tier_2",
+        "tier_3",
+        "perk_credit",
+        "perk_drops",
+        "perk_shipping",
+        "perk_support",
+        "perk_perfume",
+        "cmp_discount",
+        "cmp_credit",
+        "cmp_drops",
+        "cmp_shipping",
+        "cmp_perfume"
+      ],
+      "settings": {
+        "hero_brand": "Tryscent+",
+        "hero_subtitle": "VIP-medlemskap",
+        "hero_heading": "Smell amazing for less, every month.",
+        "hero_body": "<p>A membership that rewards you. Turn your €14.99 monthly fee into store credit and get up to 30% off all your orders.</p>",
+        "hero_cta_primary_text": "Start for €1.95",
+        "hero_cta_secondary_text": "LOG IN",
+        "hero_cta_secondary_link": "",
+        "hero_fine_print": "First month €1.95 · Pause or cancel anytime",
+        "how_eyebrow": "How it works",
+        "how_title": "",
+        "how_fine_print": "Only €1.95 for the first month, then €14.99. You can pause or cancel anytime.",
+        "how_cta_text": "START FOR €1.95",
+        "perks_eyebrow": "What's included",
+        "perks_title": "Exclusive perks,",
+        "perks_title_accent": "every month.",
+        "tiers_title": "Buy more, save more",
+        "tiers_subtitle_prefix": "Up To",
+        "comparison_eyebrow": "Member vs. guest",
+        "comparison_title": "See what you",
+        "comparison_member_label": "Tryscent+",
+        "comparison_guest_label": "Guest",
+        "member_perks_title": "Your perks, every month.",
+        "member_cta_text": "MANAGE MEMBERSHIP",
+        "member_cta_link": "",
+        "max_width": 880,
+        "comparison_title_accent": "get."
+      }
+    },
+    "membership_landing_bottom": {
+      "type": "membership-landing-bottom",
+      "blocks": {
+        "faq_join": {
+          "type": "faq",
+          "settings": {
+            "question": "How do I join Tryscent+?",
+            "answer": "<p>Use any join button on this page, or select Join VIP in the cart before you go to checkout.</p>"
+          }
+        },
+        "faq_monthly_fee": {
+          "type": "faq",
+          "settings": {
+            "question": "Does Tryscent+ have a monthly fee?",
+            "answer": "<p>Your first month costs €1.95. After that it's a flat €14.99 per month — and every payment comes back to you as store credit to use on any order.</p>"
+          }
+        },
+        "faq_duration": {
+          "type": "faq",
+          "settings": {
+            "question": "How long do I have to keep my membership?",
+            "answer": "<p>No commitment. Pause or cancel anytime.</p>"
+          }
+        },
+        "faq_charged": {
+          "type": "faq",
+          "settings": {
+            "question": "When am I charged?",
+            "answer": "<p>You're charged €1.95 when you join. After that, €14.99 is charged on the same date the following month and then every month for as long as your membership is active.</p>"
+          }
+        },
+        "faq_trial_credit": {
+          "type": "faq",
+          "settings": {
+            "question": "Do I get store credit for my first month?",
+            "answer": "<p>No. The €1.95 introductory month isn't converted to credit. Store credit starts with your first full month at €14.99.</p>"
+          }
+        },
+        "faq_use_credit": {
+          "type": "faq",
+          "settings": {
+            "question": "How do I use my store credit?",
+            "answer": "<p>Use it at checkout. You choose how much of your available credit to apply to the order.</p>"
+          }
+        },
+        "faq_stack": {
+          "type": "faq",
+          "settings": {
+            "question": "Can the member discount be combined?",
+            "answer": "<p>It can be combined with site-wide promotions, but not with member-exclusive sales.</p>"
+          }
+        },
+        "faq_cancel": {
+          "type": "faq",
+          "settings": {
+            "question": "How do I cancel or pause my membership?",
+            "answer": "<p>Go to Manage membership in your account and choose Pause or Cancel.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "faq_join",
+        "faq_monthly_fee",
+        "faq_duration",
+        "faq_charged",
+        "faq_trial_credit",
+        "faq_use_credit",
+        "faq_stack",
+        "faq_cancel"
+      ],
+      "settings": {
+        "banner_title": "Join Tryscent+ on us.",
+        "banner_text": "<p>Your first month costs only €1.95. Get up to 30% off all your orders and watch your perks grow every month.</p>",
+        "banner_button_text": "START FOR €1.95",
+        "banner_disclaimer": "Pause or cancel anytime",
+        "member_banner_title": "You're in, Tryscent+ member.",
+        "member_banner_text": "<p>Manage, pause or cancel your membership anytime from your account.</p>",
+        "member_banner_button_text": "MANAGE MEMBERSHIP",
+        "member_banner_button_link": "",
+        "faq_title": "FAQ",
+        "max_width": 880
+      }
+    },
+    "membership_products": {
+      "type": "membership-products",
+      "settings": {
+        "title": "YOU'LL LOVE THESE",
+        "products_to_show": 8,
+        "button_text": "Add",
+        "max_width": 880,
+        "collection": "best-sellers"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "membership_landing",
+    "membership_products",
+    "membership_landing_bottom"
+  ]
+}

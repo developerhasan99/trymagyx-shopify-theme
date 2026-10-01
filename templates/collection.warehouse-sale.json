@@ -1,0 +1,211 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "insta_story_6kD6Ki": {
+      "type": "insta-story",
+      "blocks": {
+        "story_gjiCaN": {
+          "type": "story",
+          "settings": {
+            "title": "LV",
+            "image": "shopify://shop_images/new-arribals.png",
+            "link": "shopify://collections/louis-vuitton®"
+          }
+        },
+        "story_yMVHwJ": {
+          "type": "story",
+          "settings": {
+            "title": "Dior",
+            "image": "shopify://shop_images/dior.avif",
+            "link": "shopify://collections/dior®"
+          }
+        },
+        "story_BpqQDR": {
+          "type": "story",
+          "settings": {
+            "title": "Tom Ford",
+            "image": "shopify://shop_images/Tom_ford.avif",
+            "link": "shopify://collections/tomford®"
+          }
+        },
+        "story_YdjabH": {
+          "type": "story",
+          "settings": {
+            "title": "Baccarat",
+            "image": "shopify://shop_images/Baccarat_Rouge.png",
+            "link": "shopify://collections/baccarat-rouge®"
+          }
+        },
+        "story_fFraf6": {
+          "type": "story",
+          "settings": {
+            "title": "Creed",
+            "image": "shopify://shop_images/Creed.png",
+            "link": "shopify://collections/creed®"
+          }
+        },
+        "story_TBAmBK": {
+          "type": "story",
+          "disabled": true,
+          "settings": {
+            "title": "Xerjoff",
+            "image": "shopify://shop_images/xerjoff.avif",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "story_gjiCaN",
+        "story_yMVHwJ",
+        "story_BpqQDR",
+        "story_YdjabH",
+        "story_fFraf6",
+        "story_TBAmBK"
+      ],
+      "disabled": true,
+      "settings": {}
+    },
+    "banner": {
+      "type": "main-collection-banner",
+      "disabled": true,
+      "settings": {
+        "show_collection_description": false,
+        "show_collection_image": false,
+        "color_scheme": "scheme-2"
+      }
+    },
+    "collection_header_QYFbG9": {
+      "type": "collection-header",
+      "blocks": {
+        "step_AmUxdp": {
+          "type": "step",
+          "settings": {
+            "step_title": "Pick 3 of your favorite scents",
+            "step_description": "And add them to your cart"
+          }
+        },
+        "step_hUWJha": {
+          "type": "step",
+          "settings": {
+            "step_title": "Get one completely FREE!",
+            "step_description": "The cheapest bottle in your cart is automatically discounted to FREE"
+          }
+        },
+        "step_QBLHD7": {
+          "type": "step",
+          "settings": {
+            "step_title": "Add more and get free bonuses",
+            "step_description": "More info in the cart!"
+          }
+        },
+        "guarantee_6CKxJc": {
+          "type": "guarantee",
+          "settings": {
+            "icon": "shopify://shop_images/watch.svg",
+            "text": "Lasts 12+ hours"
+          }
+        },
+        "guarantee_XLaTQc": {
+          "type": "guarantee",
+          "settings": {
+            "icon": "shopify://shop_images/droplet.svg",
+            "text": "21% perfume oil concentration"
+          }
+        },
+        "guarantee_LqER7r": {
+          "type": "guarantee",
+          "settings": {
+            "icon": "shopify://shop_images/shield.svg",
+            "text": "60-day money-back guarantee"
+          }
+        }
+      },
+      "block_order": [
+        "step_AmUxdp",
+        "step_hUWJha",
+        "step_QBLHD7",
+        "guarantee_6CKxJc",
+        "guarantee_XLaTQc",
+        "guarantee_LqER7r"
+      ],
+      "name": "Collection Header",
+      "settings": {
+        "background_color": "#242833",
+        "text_color": "#ffffff",
+        "bg_image": "shopify://shop_images/warehouse_banner_shade_desk.png",
+        "bg_mobile_image": "shopify://shop_images/warehouse_banner_shade_mobile.png",
+        "social_proof_text": "Approved by 10,000+ happy fragrance lovers",
+        "collection_title": "WE REALLY MESSED UP 😂",
+        "collection_description": "PERFUMES ARE NOW ALMOST FREE",
+        "btn_link": "",
+        "btn_text": "Start shopping!",
+        "padding_top": 72,
+        "padding_bottom": 72,
+        "mobile_padding_top": 40,
+        "mobile_padding_bottom": 40
+      }
+    },
+    "product-grid": {
+      "type": "main-collection-product-grid",
+      "settings": {
+        "products_per_page": 16,
+        "columns_desktop": 4,
+        "columns_mobile": "2",
+        "color_scheme": "scheme-2",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": true,
+        "quick_add": "none",
+        "enable_filtering": true,
+        "filter_type": "horizontal",
+        "enable_sorting": true,
+        "padding_top": 36,
+        "padding_bottom": 40
+      }
+    },
+    "rich_text_fnCgkL": {
+      "type": "rich-text",
+      "blocks": {
+        "text_x4GrCN": {
+          "type": "text",
+          "settings": {
+            "text": "<p></p>{{ collection.description }}"
+          }
+        }
+      },
+      "block_order": [
+        "text_x4GrCN"
+      ],
+      "disabled": true,
+      "custom_css": [
+        ".rich-text--full-width {background-color: #fcfbf9; border-top: #f3f3f3 2px solid;}"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    }
+  },
+  "order": [
+    "insta_story_6kD6Ki",
+    "banner",
+    "collection_header_QYFbG9",
+    "product-grid",
+    "rich_text_fnCgkL"
+  ]
+}

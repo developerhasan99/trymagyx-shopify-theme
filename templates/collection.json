@@ -1,0 +1,263 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "collection_hero_P7jePR": {
+      "type": "collection-hero",
+      "name": "Collection Hero",
+      "settings": {
+        "show_rating_badge": false,
+        "rating_text": "Verified by over 10,000 fragrance lovers"
+      }
+    },
+    "fuel01_byo": {
+      "type": "fuel01-byo",
+      "blocks": {
+        "perk_hours": {
+          "type": "fuel01_perk",
+          "settings": {
+            "icon_asset": "fuel01-perk-hours.png",
+            "title": "Lasts 12+ hours",
+            "text": "A scent that lasts all day."
+          }
+        },
+        "perk_guarantee": {
+          "type": "fuel01_perk",
+          "settings": {
+            "icon_asset": "fuel01-perk-guarantee.png",
+            "title": "60-day guarantee",
+            "text": "Money back within 60 days."
+          }
+        },
+        "perk_quality": {
+          "type": "fuel01_perk",
+          "settings": {
+            "icon_asset": "fuel01-perk-quality.png",
+            "title": "French quality standard",
+            "text": "Quality on par with designer fragrances."
+          }
+        },
+        "perk_eu": {
+          "type": "fuel01_perk",
+          "settings": {
+            "icon_asset": "fuel01-perk-eu.png",
+            "title": "Made in the EU",
+            "text": "Clean label."
+          }
+        }
+      },
+      "block_order": [
+        "perk_hours",
+        "perk_guarantee",
+        "perk_quality",
+        "perk_eu"
+      ],
+      "settings": {
+        "target_collection": "",
+        "bundle_product": "",
+        "grid_collection": "",
+        "heading": "Build your own Pick & Save",
+        "subheading": "3 × 100 ml perfumes – get the 4th completely free",
+        "subheading_2": "Pick your favorite scents and save more.",
+        "slot_label": "Pick your scent",
+        "free_slot_label": "Your 4th scent",
+        "free_slot_sub": "GRATIS",
+        "free_pill_label": "FREE",
+        "counter_text": "[selected] / [total] valda",
+        "hint_text": "Add 1 more scent to unlock your free scent!",
+        "hint_text_one": "Add 1 more scent to unlock your free scent!",
+        "done_text": "Your bundle is ready!",
+        "total_label": "Reg. total price (4 × 100 ml)",
+        "discount_label": "Discount (1 scent free)",
+        "price_label": "Your price",
+        "savings_label": "You save",
+        "search_placeholder": "Find your perfume",
+        "ribbon_text": "",
+        "cta_label": "Add",
+        "cta_next_label": "Add in step [n]",
+        "cta_added_label": "Added in step [n]",
+        "empty_text": "No scents match your search.",
+        "reveal_label": "Check out more!",
+        "sticky_price_label": "Your price",
+        "sticky_cta_view": "View your bundle ([count])",
+        "sticky_cta_checkout": "Go to checkout"
+      }
+    },
+    "insta_story_6kD6Ki": {
+      "type": "insta-story",
+      "blocks": {
+        "story_gjiCaN": {
+          "type": "story",
+          "settings": {
+            "title": "LV",
+            "image": "shopify://shop_images/new-arribals.png",
+            "link": "shopify://collections/louis-vuitton®"
+          }
+        },
+        "story_yMVHwJ": {
+          "type": "story",
+          "settings": {
+            "title": "Dior",
+            "image": "shopify://shop_images/dior.avif",
+            "link": "shopify://collections/dior®"
+          }
+        },
+        "story_BpqQDR": {
+          "type": "story",
+          "settings": {
+            "title": "Tom Ford",
+            "image": "shopify://shop_images/Tom_ford.avif",
+            "link": "shopify://collections/tomford®"
+          }
+        },
+        "story_YdjabH": {
+          "type": "story",
+          "settings": {
+            "title": "Baccarat",
+            "image": "shopify://shop_images/Baccarat_Rouge.png",
+            "link": "shopify://collections/baccarat-rouge®"
+          }
+        },
+        "story_fFraf6": {
+          "type": "story",
+          "settings": {
+            "title": "Creed",
+            "image": "shopify://shop_images/Creed.png",
+            "link": "shopify://collections/creed®"
+          }
+        },
+        "story_TBAmBK": {
+          "type": "story",
+          "disabled": true,
+          "settings": {
+            "title": "Xerjoff",
+            "image": "shopify://shop_images/xerjoff.avif",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "story_gjiCaN",
+        "story_yMVHwJ",
+        "story_BpqQDR",
+        "story_YdjabH",
+        "story_fFraf6",
+        "story_TBAmBK"
+      ],
+      "disabled": true,
+      "settings": {}
+    },
+    "banner": {
+      "type": "main-collection-banner",
+      "disabled": true,
+      "settings": {
+        "show_collection_description": false,
+        "show_collection_image": false,
+        "color_scheme": "scheme-2"
+      }
+    },
+    "popular_products_F6w4h9": {
+      "type": "popular-products",
+      "disabled": true,
+      "name": "Popular Products",
+      "settings": {
+        "background_color": "#fcfbf9",
+        "title": "Buy more and save!",
+        "description": "",
+        "collection": "seasonal-bundles",
+        "button_text": "Check out more!",
+        "button_link": "shopify://collections/seasonal-bundles",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "product-grid": {
+      "type": "main-collection-product-grid",
+      "blocks": {
+        "featured_product_WYiyqw": {
+          "type": "featured_product",
+          "disabled": true,
+          "settings": {
+            "position": 1,
+            "product": "3-x-100ml-parfymflaskor"
+          }
+        },
+        "quiz_promo_card_hA4E9G": {
+          "type": "quiz_promo_card",
+          "disabled": true,
+          "settings": {
+            "position": 3,
+            "heading": "Find Your Perfect Scent In 2 Minutes",
+            "image": "shopify://shop_images/ugc-bg.webp",
+            "url": "/#quiz",
+            "button_text": "Take our quiz"
+          }
+        }
+      },
+      "block_order": [
+        "featured_product_WYiyqw",
+        "quiz_promo_card_hA4E9G"
+      ],
+      "settings": {
+        "products_per_page": 16,
+        "columns_desktop": 4,
+        "columns_mobile": "2",
+        "color_scheme": "scheme-2",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": true,
+        "quick_add": "none",
+        "enable_filtering": true,
+        "filter_type": "horizontal",
+        "enable_sorting": true,
+        "padding_top": 36,
+        "padding_bottom": 40
+      }
+    },
+    "rich_text_fnCgkL": {
+      "type": "rich-text",
+      "blocks": {
+        "text_x4GrCN": {
+          "type": "text",
+          "settings": {
+            "text": "<p></p>{{ collection.description }}"
+          }
+        }
+      },
+      "block_order": [
+        "text_x4GrCN"
+      ],
+      "disabled": true,
+      "custom_css": [
+        ".rich-text--full-width {background-color: #fcfbf9; border-top: #f3f3f3 2px solid;}"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    }
+  },
+  "order": [
+    "collection_hero_P7jePR",
+    "fuel01_byo",
+    "insta_story_6kD6Ki",
+    "banner",
+    "popular_products_F6w4h9",
+    "product-grid",
+    "rich_text_fnCgkL"
+  ]
+}
