@@ -735,6 +735,7 @@
         "review_XfwcAY": {
           "type": "review",
           "settings": {
+            "review_image": "shopify://shop_images/clara_438.png",
             "content": "<p>\"I had the opportunity to try their perfumes, they have a great price, a wide range of fragrances but above all their perfumes are persistent and long-lasting highly recommended!\"</p>",
             "author": "Clara P.",
             "date": "3 days ago",
@@ -790,6 +791,7 @@
         "review_aThE8h": {
           "type": "review",
           "settings": {
+            "review_image": "shopify://shop_images/robinson_288.png",
             "content": "<p>\"Best of the BEST!\"</p>",
             "author": "Alex W.",
             "date": "3 Weeks ago",
