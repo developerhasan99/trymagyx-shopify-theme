@@ -15,7 +15,7 @@
     "scent_quiz_klaviyo_enabled": true,
     "scent_quiz_klaviyo_public_key": "RhTHcL",
     "scent_quiz_klaviyo_list_id": "ThzFmW",
-    "logo": "shopify://shop_images/MAGYX.svg",
+    "logo": "shopify://shop_images/5f20994f-3b6b-4f4d-90aa-6e669c1e334e.png",
     "logo_width": 140,
     "favicon": "shopify://shop_images/favicon-magic-perfume.svg",
     "type_header_font": "figtree_n4",
@@ -150,23 +150,6 @@
       }
     },
     "content_for_index": [],
-    "blocks": {
-      "17676059084223943535": {
-        "type": "shopify://apps/triplewhale/blocks/triple_pixel_snippet/483d496b-3f1a-4609-aea7-8eee3b6b7a2a",
-        "disabled": false,
-        "settings": {}
-      },
-      "8218531531362863771": {
-        "type": "shopify://apps/kite-discount-free-gift/blocks/app-embed/2c7302c4-455d-4078-a829-48563ba26089",
-        "disabled": false,
-        "settings": {}
-      },
-      "1173261918193615741": {
-        "type": "shopify://apps/geo-pro-geolocation/blocks/geopro/16fc5313-7aee-4e90-ac95-f50fc7c8b657",
-        "disabled": false,
-        "settings": {}
-      }
-    },
     "color_schemes": {
       "scheme-1": {
         "settings": {
