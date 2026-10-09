@@ -471,6 +471,7 @@
       ],
       "settings": {
         "background_color": "#ffffff",
+        "image": "shopify://shop_images/FM_company.webp",
         "rounded_image": true,
         "image_placement": "1",
         "mobile_image_placement": "under_heading",
@@ -531,6 +532,7 @@
       "blocks": {
         "category_yXjfNN": {
           "type": "category",
+          "disabled": true,
           "settings": {
             "text": "Bundle & save",
             "link": "shopify://collections/bundle-save"
@@ -540,14 +542,14 @@
           "type": "category",
           "settings": {
             "text": "For Him",
-            "link": "shopify://collections/best-sellers-for-men"
+            "link": "shopify://collections/for-men"
           }
         },
         "category_kcgbew": {
           "type": "category",
           "settings": {
             "text": "For Her",
-            "link": "shopify://collections/best-sellers-for-women"
+            "link": "shopify://collections/for-women"
           }
         },
         "category_PLwfRa": {
