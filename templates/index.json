@@ -72,8 +72,6 @@
       "name": "Homepage Hero",
       "settings": {
         "background_color": "#faf9f6",
-        "background_image": "shopify://shop_images/MAGYX_Site_Header.webp",
-        "mobile_background_image": "shopify://shop_images/MAGYX_Site_Header_Mobile_A.jpg",
         "review_text": "Loved by 10,000+ Customers",
         "title": "Find the fragrance you'll be remembered for.",
         "subtitle": "The world's No. 1 designer-inspired fragrances. Made by the same experts behind some of the world's best-known perfumes.",
@@ -230,15 +228,16 @@
         "background_color": "#fcfbf9",
         "title": "Best Sellers 🔥",
         "description": "",
-        "collection": "best-sellers",
+        "collection": "bestsellers",
         "button_text": "View all",
-        "button_link": "shopify://collections/best-sellers",
+        "button_link": "shopify://collections/bestsellers",
         "padding_top": 72,
         "padding_bottom": 40
       }
     },
     "popular_products_pNDeh4": {
       "type": "popular-products",
+      "disabled": true,
       "name": "Popular Products",
       "settings": {
         "background_color": "#fcfbf9",
@@ -472,7 +471,6 @@
       ],
       "settings": {
         "background_color": "#ffffff",
-        "image": "shopify://shop_images/MAGYX_Site_02_1.webp",
         "rounded_image": true,
         "image_placement": "1",
         "mobile_image_placement": "under_heading",
@@ -534,7 +532,6 @@
         "category_yXjfNN": {
           "type": "category",
           "settings": {
-            "image": "shopify://shop_images/MAGYX_Site_Bundle_Save_1.webp",
             "text": "Bundle & save",
             "link": "shopify://collections/bundle-save"
           }
@@ -542,7 +539,6 @@
         "category_JatE79": {
           "type": "category",
           "settings": {
-            "image": "shopify://shop_images/MAGYX_Site_For_Him.webp",
             "text": "For Him",
             "link": "shopify://collections/best-sellers-for-men"
           }
@@ -550,7 +546,6 @@
         "category_kcgbew": {
           "type": "category",
           "settings": {
-            "image": "shopify://shop_images/MAGYX_Site_For_Her.webp",
             "text": "For Her",
             "link": "shopify://collections/best-sellers-for-women"
           }
@@ -558,7 +553,6 @@
         "category_PLwfRa": {
           "type": "category",
           "settings": {
-            "image": "shopify://shop_images/MAGYX_Site_Unisex.webp",
             "text": "Unisex",
             "link": "shopify://collections/unisex"
           }
@@ -627,7 +621,6 @@
       "settings": {
         "background_color": "#ffffff",
         "makes_diferent_title": "What makes Magyx different?",
-        "makes-different-image": "shopify://shop_images/MAGYX_Site_Showcase.webp",
         "makes-different-btn-text": "BUY 2 GET 1 FREE - ENDS SOON!",
         "makes-different-btn-link": "",
         "padding_top": 72,
@@ -640,7 +633,6 @@
         "occasion_En4TzG": {
           "type": "occasion",
           "settings": {
-            "image": "shopify://shop_images/288.webp",
             "eyebrow": "01 · Presence",
             "title": "Attraction",
             "description": "Leave a lasting impression.",
@@ -702,7 +694,6 @@
         "review_zAw7dR": {
           "type": "review",
           "settings": {
-            "review_image": "shopify://shop_images/2_24.png",
             "content": "<p>\"I really like this brand and the fragrance are amazing..\"</p>",
             "author": "Lilian M.",
             "date": "1 day ago",
@@ -725,7 +716,6 @@
         "review_yCzQxH": {
           "type": "review",
           "settings": {
-            "review_image": "shopify://shop_images/1_24.png",
             "content": "<p>\"Supergood alternativ, lasting long and is the same like the more expansive perfumes. Highly recommend to test you will not be disappointed.\"</p>",
             "author": "Maria M",
             "date": "2 days ago",
@@ -748,7 +738,6 @@
         "review_8jw9Px": {
           "type": "review",
           "settings": {
-            "review_image": "shopify://shop_images/6_14.png",
             "content": "<p>\"High quality product for only $29! The perfume smells exactly like the original and it last for hours!<br/>Recommended \"</p>",
             "author": "Adele S.",
             "date": "2 Weeks ago",
@@ -760,7 +749,6 @@
         "review_UPwGBF": {
           "type": "review",
           "settings": {
-            "review_image": "shopify://shop_images/5_12.png",
             "content": "<p>\"I bought one perfume inspired by mademoiselle , and it’s fantastic . It last long on the skin and the smell it’s absolutely identical. \"</p>",
             "author": "Jenniffer W.",
             "date": "3 Weeks ago",
@@ -805,7 +793,6 @@
         "review_YXwWcc": {
           "type": "review",
           "settings": {
-            "review_image": "shopify://shop_images/1_25.png",
             "content": "<p>\"I loooove these perfumes! Each one I received smells divinely good. Some, I would say, are better than the original.\"</p>",
             "author": "Christine N.",
             "date": "3 Months ago",
@@ -828,7 +815,6 @@
         "review_y8tq9b": {
           "type": "review",
           "settings": {
-            "review_image": "shopify://shop_images/7_6.png",
             "content": "<p>\"Quick service, Great products 🥰🥰🥰\"</p>",
             "author": "Lidis A.",
             "date": "2 months ago",
@@ -873,7 +859,6 @@
         "review_G3HzBj": {
           "type": "review",
           "settings": {
-            "review_image": "shopify://shop_images/3_16.png",
             "content": "<p>\"I love your perfumes♥️♥️\"</p>",
             "author": "Robinson D.",
             "date": "4 months ago",
@@ -929,7 +914,6 @@
         "review_JRzxRP": {
           "type": "review",
           "settings": {
-            "review_image": "shopify://shop_images/Magyx_UGC_07.png",
             "content": "<p>\"I am satisfied with Magic Perfume. The perfume smells very similar to the original and holds well. The packaging is neat and the bottle is beautiful. Overall, it's an excellent option if you want a quality perfume at a reasonable price.\"</p>",
             "author": "Alina M",
             "date": "5 months ago",
@@ -941,7 +925,6 @@
         "review_9T4pt3": {
           "type": "review",
           "settings": {
-            "review_image": "shopify://shop_images/Magyx_UGC_10.png",
             "content": "<p>\"Their products are good quality at a very affordable price.\"</p>",
             "author": "Amanda G",
             "date": "5 months ago",
@@ -953,7 +936,6 @@
         "review_aietxq": {
           "type": "review",
           "settings": {
-            "review_image": "shopify://shop_images/Magyx_UGC_29.png",
             "content": "<p>\"Superb fragrances, excellent products, no problem.\"</p>",
             "author": "Alex S.",
             "date": "6 months ago",
@@ -965,7 +947,6 @@
         "review_YtFw34": {
           "type": "review",
           "settings": {
-            "review_image": "shopify://shop_images/Magyx_UGC_02.png",
             "content": "<p>\"The product arrived well packaged. The perfume wasn't broken, hadn't leaked and was in good condition. The perfume is perfect and didn't smell bad. I love it, high quality.\"</p>",
             "author": "Roxanne S",
             "date": "5 months ago",
@@ -977,7 +958,6 @@
         "review_WnPpEf": {
           "type": "review",
           "settings": {
-            "review_image": "shopify://shop_images/Magyx_UGC_28.png",
             "content": "<p>\"From service to product, the experience was phenomenal. I will happily buy again anytime.\"</p>",
             "author": "Benjamin M",
             "date": "5 months ago",
@@ -989,7 +969,6 @@
         "review_jRgbTk": {
           "type": "review",
           "settings": {
-            "review_image": "shopify://shop_images/Magyx_UGC_13.png",
             "content": "<p>\"Excellent product! Super affordable alternative to brand name perfumes. The fragrance lasts a long time and you get your money's worth.\"</p>",
             "author": "EM",
             "date": "4 months ago",
@@ -1001,7 +980,6 @@
         "review_GbhyC3": {
           "type": "review",
           "settings": {
-            "review_image": "shopify://shop_images/Magyx_UGC_18.png",
             "content": "<p>\"Oh my God, I loved it. Wow! Exactly like the original and it lasts all day! ❤️‍🔥❤️‍🔥\"</p>",
             "author": "Marianne",
             "date": "4 months ago",
@@ -1013,7 +991,6 @@
         "review_C3bd9b": {
           "type": "review",
           "settings": {
-            "review_image": "shopify://shop_images/Magyx_UGC_27.png",
             "content": "<p>\"The fragrance of this product is super rich and I love how beautiful the bottle and its design are. I would really use it again.\"</p>",
             "author": "Eliannys Y",
             "date": "7 months ago",
@@ -1025,7 +1002,6 @@
         "review_NYCPwJ": {
           "type": "review",
           "settings": {
-            "review_image": "shopify://shop_images/Magyx_UGC_16.png",
             "content": "<p>\"I like it! I appreciate this fragrance. Good smell.\"</p>",
             "author": "Metrine M",
             "date": "7 months ago",
@@ -1037,7 +1013,6 @@
         "review_EniFK9": {
           "type": "review",
           "settings": {
-            "review_image": "shopify://shop_images/Magyx_UGC_30.png",
             "content": "<p>\"Excellent product, smells fantastically good. I always have people asking me about my fragrance and what I use.\"</p>",
             "author": "Damario R",
             "date": "7 months ago",
@@ -1049,7 +1024,6 @@
         "review_r8Gi8i": {
           "type": "review",
           "settings": {
-            "review_image": "shopify://shop_images/Magyx_UGC_12.png",
             "content": "<p>\"Super brand and excellent products!\"</p>",
             "author": "Juliana B",
             "date": "4 months ago",
@@ -1061,7 +1035,6 @@
         "review_LRkiUH": {
           "type": "review",
           "settings": {
-            "review_image": "shopify://shop_images/Magyx_UGC_17.png",
             "content": "<p>\"After a small delay, I finally received my Magic Perfume perfumes and they are exactly as they should be! I can hardly believe how much they match the originals — for reference, I received \"Ylang Ylang Rose Jasmine\" and \"Aldehydes Rose Sandalwood\", these are really beautiful fragrances.\"</p>",
             "author": "Gabriella K",
             "date": "7 months ago",
@@ -1073,7 +1046,6 @@
         "review_Vb9HW7": {
           "type": "review",
           "settings": {
-            "review_image": "shopify://shop_images/Magyx_UGC_33.png",
             "content": "<p>\"Very good brand, I love the packaging and the aroma.\"</p>",
             "author": "Rosa B",
             "date": "7 months ago",
@@ -1085,7 +1057,6 @@
         "review_JdiNyt": {
           "type": "review",
           "settings": {
-            "review_image": "shopify://shop_images/Magyx_UGC_31.png",
             "content": "<p>\"I'm a big fan of cologne, so I'm picky about clones, but Magic Perfume completely convinced me. I ordered the Sauvage clone from the homepage and immediately recognized the scent when spraying it. I now own 4 Magic Perfume perfumes in total and I love them all. I have 3 more on the way thanks to their bundle deals. If you want something that works on a small budget and offers designer performance, I can't recommend them enough.\"</p>",
             "author": "Sean P",
             "date": "4 months ago",
@@ -1097,7 +1068,6 @@
         "review_bNVhH6": {
           "type": "review",
           "settings": {
-            "review_image": "shopify://shop_images/Magyx_UGC_32.png",
             "content": "<p>\"I am very satisfied with the perfume from this brand, they have such a beautiful perfume like the original and cheaper, I will definitely buy again.\"</p>",
             "author": "Angel",
             "date": "8 months ago",
@@ -1109,7 +1079,6 @@
         "review_PiLjha": {
           "type": "review",
           "settings": {
-            "review_image": "shopify://shop_images/Magyx_UGC_35.png",
             "content": "<p>\"This summer, I received a sample of Creed Aventus as a gift and really liked it, but I couldn't buy the original, so I looked for dupes. I found Magic Perfume and ordered \"Pineapple Smoke Vanilla\", it arrived in about a week and smells really good, as close to my original sample, very satisfied with the product, especially for the price.\"</p>",
             "author": "Hwan H",
             "date": "8 months ago",
@@ -1121,7 +1090,6 @@
         "review_AEQxcH": {
           "type": "review",
           "settings": {
-            "review_image": "shopify://shop_images/Magyx_UGC_34.png",
             "content": "<p>\"I tried their 7.5 ml samples and to my great surprise, I loved them. I placed a 2nd order, but this time I took the larger bottles. I must say I received my orders on time and they delivered the fragrances I love!\"</p>",
             "author": "Lauri E",
             "date": "8 months ago",
