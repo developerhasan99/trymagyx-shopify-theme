@@ -627,6 +627,7 @@
       "settings": {
         "background_color": "#ffffff",
         "makes_diferent_title": "What makes Magyx different?",
+        "makes-different-image": "shopify://shop_images/Federico_Mahora_For_Showcase.png",
         "makes-different-btn-text": "BUY 2 GET 1 FREE - ENDS SOON!",
         "makes-different-btn-link": "",
         "padding_top": 72,
