@@ -550,6 +550,7 @@
         "category_kcgbew": {
           "type": "category",
           "settings": {
+            "image": "shopify://shop_images/Federico_Mahora_For_Her_v2.png",
             "text": "For Her",
             "link": "shopify://collections/for-women"
           }
