@@ -38,6 +38,13 @@
             "menu": "footer"
           }
         },
+        "link_list_d8tfzz": {
+          "type": "link_list",
+          "settings": {
+            "heading": "Policies",
+            "menu": "footer-comapny"
+          }
+        },
         "text_FEF8Xw": {
           "type": "text",
           "settings": {
@@ -49,6 +56,7 @@
       "block_order": [
         "link_list_nemT7J",
         "link_list_VCpt9M",
+        "link_list_d8tfzz",
         "text_FEF8Xw"
       ],
       "settings": {
