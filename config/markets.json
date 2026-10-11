@@ -14,21 +14,6 @@
     },
     "canada": {
       "parent": "@default"
-    },
-    "eu-market": {
-      "parent": "@default"
-    },
-    "new-zealand": {
-      "parent": "@default"
-    },
-    "poland": {
-      "parent": "@default"
-    },
-    "singapore": {
-      "parent": "@default"
-    },
-    "united-kingdome": {
-      "parent": "@default"
     }
   }
 }
