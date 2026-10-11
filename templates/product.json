@@ -351,7 +351,7 @@
       "name": "Stacks Up",
       "settings": {
         "background_color": "#fcfbf9",
-        "title": "How Magyx Compares",
+        "title": "How Federico Mahora Compares",
         "btn_text": "Browse Best Fragrances",
         "btn_url": "shopify://collections/best-sellers",
         "padding_top": 60,
@@ -928,14 +928,14 @@
           "type": "stat",
           "settings": {
             "percentage": 99,
-            "text": "Said Magyx smells luxurious without the luxury price tag."
+            "text": "Said Federico Mahora smells luxurious without the luxury price tag."
           }
         },
         "stat_ym9zVf": {
           "type": "stat",
           "settings": {
             "percentage": 96,
-            "text": "of our customers love Magyx as their new signature scent."
+            "text": "of our customers love Federico Mahora as their new signature scent."
           }
         },
         "stat_YMCTgd": {
@@ -952,10 +952,10 @@
         "stat_YMCTgd"
       ],
       "disabled": true,
-      "name": "Magyx Statistics",
+      "name": "FM Statistics",
       "settings": {
         "background_color": "#faf9f6",
-        "heading": "10,000+ Magyx Bottles Shipped Worldwide",
+        "heading": "10,000+ Federico Mahora Bottles Shipped Worldwide",
         "disclaimer": "*RESULTS BASED ON 1,000+ POST-PURCHASE SURVEYS",
         "padding_top": 12,
         "padding_bottom": 72
@@ -968,7 +968,7 @@
           "type": "step",
           "settings": {
             "step_title": "Step 01",
-            "step_description": "Order your Magyx fragrance."
+            "step_description": "Order your Federico Mahora fragrance."
           }
         },
         "step_icybe6": {
@@ -1000,7 +1000,7 @@
         "step_7wCD4n"
       ],
       "disabled": true,
-      "name": "Magyx Steps Timeline",
+      "name": "FM Steps Timeline",
       "settings": {
         "satisfaction_title": "Your Satisfaction Guarantee"
       }
@@ -1160,8 +1160,8 @@
       "name": "Tryscent Guarantee",
       "settings": {
         "background_color": "#fcfbf9",
-        "title": "Magyx Guarantee",
-        "description": "<p>At Magyx, we believe in fragrances that make you feel amazing. That's why we offer a 60-day money-back guarantee—so you can shop with confidence.</p><p>If you're not completely in love with your scent, simply return it within 60 days for a full refund. No hassle, no stress—just a promise that you'll find a fragrance you truly adore.</p>",
+        "title": "Federico Mahora Guarantee",
+        "description": "<p>At Federico Mahora, we believe in fragrances that make you feel amazing. That's why we offer a 60-day money-back guarantee—so you can shop with confidence.</p><p>If you're not completely in love with your scent, simply return it within 60 days for a full refund. No hassle, no stress—just a promise that you'll find a fragrance you truly adore.</p>",
         "padding_top": 72,
         "padding_bottom": 72
       }
