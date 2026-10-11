@@ -381,7 +381,7 @@
   if (cta) {
     cta.addEventListener("click", function (e) {
       e.preventDefault();
-      const cfgLink = "https://magyx.co/pages/build-your-bundle-prize";
+      const cfgLink = "https://federico mahora.co/pages/build-your-bundle-prize";
       const openNew = section.getAttribute("data-cta-new-tab") === "true";
       try {
         if (openNew) window.open(cfgLink, "_blank");
