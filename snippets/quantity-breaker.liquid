@@ -243,8 +243,8 @@
       <input type="hidden" name="items[0][id]" :value="$store.qb.selectedVariantId">
       <input type="hidden" name="items[0][quantity]" value="1">
 
-      {% comment %} slots 1..n — customer-chosen bonus fragrances {% endcomment %}
-      <template x-for="(p, idx) in $store.qb.selectedProducts.slice(0, $store.qb.bundleLength)" :key="p.id">
+      {% comment %} slots 1..n — customer-chosen bonus fragrances; the same fragrance may appear more than once {% endcomment %}
+      <template x-for="(p, idx) in $store.qb.selectedProducts.slice(0, $store.qb.bundleLength)" :key="idx">
         <span>
           <input type="hidden" :name="'items[' + (idx + 1) + '][id]'" :value="p.variant.id">
           <input type="hidden" :name="'items[' + (idx + 1) + '][quantity]'" value="1">
@@ -352,9 +352,9 @@
             <template
               x-if="(product.tags.some(tag => tag === $store.qb.activeCategory) || $store.qb.activeCategory === 'All') &&
                 ($store.qb.searchText === '' || product.name.toLowerCase().includes($store.qb.searchText.toLowerCase()) || (product.inspiration_name && product.inspiration_name.toLowerCase().includes($store.qb.searchText.toLowerCase())))">
-              <button
-                @click="$store.qb.addRemoveProduct(product)"
-                :class="$store.qb.isProductSelected(product.id) ? 'border-[#17803d]' : 'border-gray-200 border'"
+              <div
+                @click="$store.qb.countOf(product.id) || $store.qb.pickProduct(product)"
+                :class="$store.qb.countOf(product.id) ? 'border-[#17803d]' : 'border-gray-200 border'"
                 class="border-[1.5px] border-solid w-full p-2 flex items-center gap-2 justify-between cursor-pointer rounded-xl bg-white">
                 <img
                   class="object-cover rounded-lg"
@@ -382,16 +382,34 @@
                       class="shrink-0 px-2 py-0.5 rounded-full bg-[#f1f4f2] text-[#6b7280] text-[10px] font-semibold leading-tight line-clamp-1"></span>
                   </div>
                 </div>
-                <div class="shrink-0 ml-auto text-center">
+                <div class="shrink-0 ml-auto flex flex-col items-end gap-1">
                   <div class="text-xs font-semibold text-[#6b7280]" x-text="$store.qb.selectedSizeLabel"></div>
+                  <button
+                    x-show="!$store.qb.countOf(product.id)"
+                    type="button"
+                    @click.stop="$store.qb.pickProduct(product)"
+                    :aria-label="'Add ' + product.name"
+                    class="size-8 p-0 rounded-full border-[1.5px] border-solid border-[#17803d] bg-white flex items-center justify-center text-xl leading-none text-[#17803d] cursor-pointer">+</button>
                   <div
-                    class="size-8 rounded-full border-[1.5px] border-solid border-[#17803d] flex items-center justify-center text-xl text-[#17803d]"
-                    :class="{ 'bg-[#17803d]' : $store.qb.isProductSelected(product.id) }">
-                    <span x-show="!$store.qb.isProductSelected(product.id)">+</span>
-                    <svg x-show="$store.qb.isProductSelected(product.id)" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"></path></svg>
+                    x-show="$store.qb.countOf(product.id)"
+                    class="flex items-center rounded-full border-[1.5px] border-solid border-[#17803d] overflow-hidden">
+                    <button
+                      type="button"
+                      @click.stop="$store.qb.unpickProduct(product)"
+                      :aria-label="'Remove ' + product.name"
+                      class="size-8 p-0 border-0 bg-white flex items-center justify-center text-xl leading-none text-[#17803d] cursor-pointer hover:bg-[#f1f4f2]">−</button>
+                    <span
+                      class="min-w-6 text-center text-sm font-bold text-black"
+                      aria-live="polite"
+                      x-text="$store.qb.countOf(product.id)"></span>
+                    <button
+                      type="button"
+                      @click.stop="$store.qb.pickProduct(product)"
+                      :aria-label="'Add ' + product.name"
+                      class="size-8 p-0 border-0 bg-[#17803d] flex items-center justify-center text-xl leading-none text-white cursor-pointer hover:bg-[#146b32]">+</button>
                   </div>
                 </div>
-              </button>
+              </div>
             </template>
           </template>
         </div>
@@ -521,13 +539,12 @@
 
       openModal: function () { this.showModal = true; },
 
-      isProductSelected: function (id) {
-        return this.selectedProducts.some(function (p) { return p.id === id; });
+      countOf: function (id) {
+        return this.selectedProducts.filter(function (p) { return p.id === id; }).length;
       },
 
-      addRemoveProduct: function (product) {
-        var idx = this.selectedProducts.findIndex(function (p) { return p.id === product.id; });
-        if (idx > -1) { this.selectedProducts.splice(idx, 1); return; }
+      {% comment %} Adds one bottle of this fragrance (repeats allowed); closes the modal when the bundle is full {% endcomment %}
+      pickProduct: function (product) {
         if (this.selectedProducts.length >= this.bundleLength) return;
 
         var picked = Object.assign({}, product);
@@ -537,7 +554,15 @@
         if (this.selectedProducts.length >= this.bundleLength) this.showModal = false;
       },
 
-      removeProduct: function (i) { this.selectedProducts.splice(i, 1); },
+      {% comment %} Removes the last bottle of this fragrance {% endcomment %}
+      unpickProduct: function (product) {
+        for (var i = this.selectedProducts.length - 1; i >= 0; i--) {
+          if (this.selectedProducts[i].id === product.id) {
+            this.selectedProducts.splice(i, 1);
+            return;
+          }
+        }
+      },
 
       syncGlobalPrices: function () {
         var priceText = this.money(this.currentPrice);

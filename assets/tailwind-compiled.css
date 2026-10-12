@@ -1012,6 +1012,10 @@
   min-width: 16px;
 }
 
+.min-w-6 {
+  min-width: 24px;
+}
+
 .max-w-16 {
   max-width: 64px;
 }
@@ -3957,6 +3961,16 @@
 .hover\:bg-slate-900:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(15 23 42 / var(--tw-bg-opacity, 1));
+}
+
+.hover\:bg-\[\#146b32\]:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(20 107 50 / var(--tw-bg-opacity, 1));
+}
+
+.hover\:bg-\[\#f1f4f2\]:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(241 244 242 / var(--tw-bg-opacity, 1));
 }
 
 .hover\:\!text-white:hover {
