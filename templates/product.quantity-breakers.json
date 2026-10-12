@@ -59,6 +59,17 @@
             "text": "Fewer than 0.5% of buyers use our money-back guarantee."
           }
         },
+        "sample_upsell_nycnLL": {
+          "type": "sample_upsell",
+          "disabled": true,
+          "settings": {
+            "product": "",
+            "heading": "Still Unsure?",
+            "subheading": "Try our parfum sample (4ml)",
+            "badge_text": "+ Free shipping",
+            "button_label": "Buy Sample"
+          }
+        },
         "dialect_notes_NHiwen": {
           "type": "dialect_notes",
           "settings": {}
@@ -176,6 +187,7 @@
         "atc_bundle_builder_aLJUaV",
         "tsr_block_eMWiKb",
         "money_back_cEqkRK",
+        "sample_upsell_nycnLL",
         "dialect_notes_NHiwen",
         "reactive_variant_selector_JyFrkg",
         "shipping_text_HCVN8A",
