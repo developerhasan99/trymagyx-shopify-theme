@@ -250,6 +250,21 @@
                     assign collection_handles = collection_handles | append: ','
                   endif
                 endfor
+
+                # Same gender tags main-product checks; women first since "women" contains "men"
+                assign gender_label = ''
+                for tag in bundle_product.tags
+                  assign tag_token = tag | downcase | strip
+                  if tag_token == 'unisex'
+                    assign gender_label = 'Unisex'
+                    break
+                  elsif tag_token == 'woman' or tag_token == 'women' or tag_token == 'fuer-frauen' or tag_token == 'damen'
+                    assign gender_label = 'Women'
+                    break
+                  elsif tag_token == 'man' or tag_token == 'men' or tag_token == 'fuer-maenner' or tag_token == 'herren'
+                    assign gender_label = 'Men'
+                  endif
+                endfor
               %}
               {
                 id: {{ bundle_product.id }},
@@ -259,6 +274,9 @@
                 inspiration_image: "{% if bundle_product.metafields.custom.inspiration.value %}{{ bundle_product.metafields.custom.inspiration.value.image | image_url: width: 90, height: 90 }}{% endif %}",
                 inspiration_name: "{% if bundle_product.metafields.custom.inspiration.value %}{{ bundle_product.metafields.custom.inspiration.value.name }}{% endif %}",
                 tags: {{ bundle_product.tags | json }},
+                bestseller: {% if bundle_product.tags contains 'bestseller' %}true{% else %}false{% endif %},
+                gender: {{ gender_label | json }},
+                fragrance_family: {{ bundle_product.metafields.custom.fragrance_family.value | join: ', ' | json }},
                 collections: "{{ collection_handles }}",
                 variants: {
                   {{ bundle_size_token | json }}: {
