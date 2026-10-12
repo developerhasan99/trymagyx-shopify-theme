@@ -12,5 +12,17 @@
     "market": "united-kingdom"
   },
   "parent": "header-group.json",
-  "sections": {}
+  "sections": {
+    "offer_timebar_xLgmJd": {
+      "settings": {},
+      "blocks": {
+        "payment_icon_GE6fq4": {
+          "settings": {
+            "label": "Uk Wide",
+            "icon": "shopify://shop_images/uk-falg.webp"
+          }
+        }
+      }
+    }
+  }
 }

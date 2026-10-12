@@ -9,10 +9,10 @@
  */
 {
   "markets": {
-    "australia": {
+    "canada": {
       "parent": "@default"
     },
-    "canada": {
+    "united-kingdom": {
       "parent": "@default"
     }
   }
