@@ -1046,6 +1046,8 @@
                   {% render 'press-quotes', block: block %}
                 {%- when 'review_slider' -%}
                   {% render 'review-slider', block: block %}
+                {%- when 'sample_upsell' -%}
+                  {% render 'sample-upsell', block: block %}
               {%- endcase -%}
             {%- endfor -%}
           </div>
@@ -1885,6 +1887,44 @@
           "id": "custom_liquid",
           "label": "t:sections.custom-liquid.settings.custom_liquid.label",
           "info": "t:sections.custom-liquid.settings.custom_liquid.info"
+        }
+      ]
+    },
+    {
+      "type": "sample_upsell",
+      "name": "Sample upsell",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "product",
+          "id": "product",
+          "label": "Sample product",
+          "info": "Image and price come from this product; its selected or first available variant is added to cart."
+        },
+        {
+          "type": "text",
+          "id": "heading",
+          "label": "Heading",
+          "default": "Still Unsure?"
+        },
+        {
+          "type": "text",
+          "id": "subheading",
+          "label": "Subheading",
+          "default": "Try our parfum sample (4ml)"
+        },
+        {
+          "type": "text",
+          "id": "badge_text",
+          "label": "Badge text",
+          "default": "+ Free shipping",
+          "info": "Leave empty to hide the badge."
+        },
+        {
+          "type": "text",
+          "id": "button_label",
+          "label": "Button label",
+          "default": "Buy Sample"
         }
       ]
     },
