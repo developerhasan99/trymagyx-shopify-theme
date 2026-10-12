@@ -12,15 +12,15 @@
     "main": {
       "type": "main-product",
       "blocks": {
-        "title": {
-          "type": "title",
-          "settings": {}
-        },
         "custom_rating_text_qMgzTM": {
           "type": "custom_rating_text",
           "settings": {
             "text": "4.9/5 based on over 10,000 reviews"
           }
+        },
+        "title": {
+          "type": "title",
+          "settings": {}
         },
         "inspired_by_idtdrk": {
           "type": "inspired_by",
@@ -168,8 +168,8 @@
         }
       },
       "block_order": [
-        "title",
         "custom_rating_text_qMgzTM",
+        "title",
         "inspired_by_idtdrk",
         "custom_liquid_dWtbAc",
         "custom_liquid_7fWyxx",
