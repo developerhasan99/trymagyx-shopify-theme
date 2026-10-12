@@ -47,13 +47,7 @@
   </h3>
 
   {% if product.metafields.custom.inspiration != blank %}
-    <div class="flex items-center gap-2 mb-3">
-      <img class="object-contain object-center" src="{{ product.metafields.custom.inspiration.value.image |  image_url: width: 90, height: 90 }}" alt="{{ product.metafields.custom.inspiration.value.image.alt | escape }}" width="35" height="35">
-      <div>
-        <p class="text-xs my-0">Inspired by:</p>
-        <h4 class="text-sm font-semibold my-0 line-clamp-1 inspiration_heading">{{ product.metafields.custom.inspiration.value.name }}</h4>
-      </div>
-    </div>
+    <p class="text-base tracking-normal leading-snug my-0 line-clamp-1 text-gray-500">Inspired by {{ product.metafields.custom.inspiration }}</p>
   {% endif %}
 
   <div class="font-bold tracking-normal my-2 {% if collection.template_suffix == 'action-modal' %}text-sm{% else %}text-base{% endif %} flex items-center flex-wrap gap-1">
