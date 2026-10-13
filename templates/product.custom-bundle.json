@@ -18,6 +18,7 @@
         },
         "made_in_the_eu_78caec": {
           "type": "made_in_the_eu",
+          "disabled": true,
           "settings": {}
         },
         "bundle_content_Fp4nMk": {
