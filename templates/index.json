@@ -758,6 +758,7 @@
         "review_UPwGBF": {
           "type": "review",
           "settings": {
+            "review_image": "shopify://shop_images/724_review.png",
             "content": "<p>\"I bought one perfume inspired by mademoiselle , and it’s fantastic . It last long on the skin and the smell it’s absolutely identical. \"</p>",
             "author": "Jenniffer W.",
             "date": "3 Weeks ago",
@@ -769,6 +770,7 @@
         "review_icFmQQ": {
           "type": "review",
           "settings": {
+            "review_image": "shopify://shop_images/724_review_v2.png",
             "content": "<p>\"the perfume is mega-true, beautiful scent, I fell in love with it\"</p>",
             "author": "Tiana N.",
             "date": "3 Weeks ago",
