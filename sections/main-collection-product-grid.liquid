@@ -173,7 +173,7 @@
                       {% render 'quiz-promo-card'
                         , block: block
                         , product_position: product_position %}
-                    {% elsif block.type == 'fuel05_ugc_video' %}
+                      {% elsif block.type == 'fuel05_ugc_video' %}
                       {%- comment -%}
                         Page one only. Desktop emits 16 products plus 7 visible tiles per
                         page and 23 does not divide by 4, so from page two the whole grid
@@ -203,11 +203,11 @@
                           style="display: none;"
                           {% endif %}
                           {{ block.shopify_attributes }}>
-                          {% render 'fuel05-ugc-tile',
-                            video: block.settings.video,
-                            video_url: block.settings.video_url,
-                            poster: block.settings.video_poster,
-                            product_item: block.settings.product
+                          {% render 'fuel05-ugc-tile'
+                            , video: block.settings.video
+                            , video_url: block.settings.video_url
+                            , poster: block.settings.video_poster
+                            , product_item: block.settings.product
                           %}
                         </li>
                       {%- endif -%}
@@ -246,17 +246,8 @@
                   data-cascade
                   style="--animation-order: {{ forloop.index }};"
                   {% endif %}>
-                  {% render 'card-product'
-                    , card_product: product
-                    , media_aspect_ratio: section.settings.image_ratio
-                    , image_shape: section.settings.image_shape
-                    , show_secondary_image: section.settings.show_secondary_image
-                    , show_vendor: section.settings.show_vendor
-                    , show_rating: section.settings.show_rating
-                    , lazy_load: lazy_load
-                    , skip_styles: skip_card_product_styles
-                    , quick_add: section.settings.quick_add
-                    , section_id: section.id
+                  {% render 'product-card'
+                    , product: product
                   %}
                 </li>
                 {%- assign skip_card_product_styles = true -%}
