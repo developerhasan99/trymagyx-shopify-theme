@@ -12,7 +12,7 @@
   endfor
   assign bundle_collection_handles = bundle_collection_handles | split: ',' | uniq
 %}
-{% assign product_count = product.metafields.custom.bundle_product_count %}
+{% assign product_count = product.metafields.custom.choose_your_fragrances_options %}
 {% assign dropdown_ml = product.metafields.custom.select_bundle_dropdown_ml | default: "50" %}
 {% assign bundle_ml = dropdown_ml | append: "ml" %}
 {% assign bundle_size_token = dropdown_ml | append: '' | downcase | strip | replace: ' ', '' | remove: 'ml' | append: 'ml' %}
