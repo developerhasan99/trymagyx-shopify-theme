@@ -55,7 +55,7 @@
                 <a class="text-black no-underline" href="{{ product.url }}">{{ product.title }}</a>
               </h3>
               {% if product.metafields.custom.inspiration != blank %}
-                <p class="text-xs text-gray-500 m-0 mb-1 line-clamp-1">Inspired by {{ product.metafields.custom.inspiration }}</p>
+                <p class="text-xs text-gray-500 m-0 mb-1 line-clamp-1">Inspired by: {{ product.metafields.custom.inspiration }}</p>
               {% endif %}
               <div class="flex items-center gap-2 mb-2">
                 <span class="text-sm font-bold text-gray-900">{{ product.price | money }}</span>
