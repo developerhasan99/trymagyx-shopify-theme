@@ -713,6 +713,7 @@
         "review_yEDVJD": {
           "type": "review",
           "settings": {
+            "review_image": "shopify://shop_images/479_review.png",
             "content": "<p>\"Easy process throw payment and trust worthy website\"</p>",
             "author": "Robinson K.",
             "date": "2 days ago",
