@@ -134,7 +134,7 @@
     "show_cart_note": false,
     "cart_drawer_collection": "cart-upsell",
     "cart_color_scheme": "scheme-1",
-    "product_card_promo_text": "Buy 3 Get 2 Free\nBuy 5 Get 3 Free",
+    "product_card_promo_text": "Buy 2 Get 1 Free\nBuy 3 Get 2 Free",
     "sections": {
       "main-password-header": {
         "type": "main-password-header",
