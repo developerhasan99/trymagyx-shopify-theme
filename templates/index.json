@@ -955,6 +955,7 @@
         "review_aietxq": {
           "type": "review",
           "settings": {
+            "review_image": "shopify://shop_images/199_review_2.png",
             "content": "<p>\"Superb fragrances, excellent products, no problem.\"</p>",
             "author": "Alex S.",
             "date": "6 months ago",
