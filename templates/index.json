@@ -877,6 +877,7 @@
         "review_G3HzBj": {
           "type": "review",
           "settings": {
+            "review_image": "shopify://shop_images/199_review.png",
             "content": "<p>\"I love your perfumes♥️♥️\"</p>",
             "author": "Robinson D.",
             "date": "4 months ago",
