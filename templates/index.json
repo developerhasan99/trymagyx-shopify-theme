@@ -73,6 +73,7 @@
       "settings": {
         "background_color": "#faf9f6",
         "background_image": "shopify://shop_images/Federico_Mahora_Banner_v5.png",
+        "mobile_background_image": "shopify://shop_images/Federico_Mahora_Banner_v5_mobile.png",
         "review_text": "Loved by 10,000+ Customers",
         "title": "Find the fragrance you'll be remembered for.",
         "subtitle": "The world's No. 1 designer-inspired fragrances. Made by the same experts behind some of the world's best-known perfumes.",
