@@ -808,6 +808,7 @@
         "review_YXwWcc": {
           "type": "review",
           "settings": {
+            "review_image": "shopify://shop_images/008_021_mix_review.png",
             "content": "<p>\"I loooove these perfumes! Each one I received smells divinely good. Some, I would say, are better than the original.\"</p>",
             "author": "Christine N.",
             "date": "3 Months ago",
