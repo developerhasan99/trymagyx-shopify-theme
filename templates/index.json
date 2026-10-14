@@ -749,6 +749,7 @@
         "review_8jw9Px": {
           "type": "review",
           "settings": {
+            "review_image": "shopify://shop_images/021_review.png",
             "content": "<p>\"High quality product for only $29! The perfume smells exactly like the original and it last for hours!<br/>Recommended \"</p>",
             "author": "Adele S.",
             "date": "2 Weeks ago",
