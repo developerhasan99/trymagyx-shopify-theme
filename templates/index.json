@@ -796,6 +796,7 @@
         },
         "review_aThE8h": {
           "type": "review",
+          "disabled": true,
           "settings": {
             "review_image": "shopify://shop_images/robinson_502.png",
             "content": "<p>\"Best of the BEST!\"</p>",
@@ -957,6 +958,7 @@
         },
         "review_aietxq": {
           "type": "review",
+          "disabled": true,
           "settings": {
             "review_image": "shopify://shop_images/199_review_2.png",
             "content": "<p>\"Superb fragrances, excellent products, no problem.\"</p>",
