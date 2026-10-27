@@ -329,7 +329,7 @@
         "background_color": "#fcfbf9",
         "title": "How Federico Mahora Compares",
         "btn_text": "Browse Best Fragrances",
-        "btn_url": "shopify://collections/best-sellers",
+        "btn_url": "shopify://collections/bestsellers",
         "padding_top": 60,
         "padding_bottom": 60
       }
