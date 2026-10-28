@@ -15,6 +15,7 @@
 {% assign product_count = product.metafields.custom.choose_your_fragrances_options %}
 {% assign dropdown_ml = product.metafields.custom.select_bundle_dropdown_ml | default: "50" %}
 {% assign bundle_ml = dropdown_ml | append: "ml" %}
+{%- comment -%} Normalised size token ("50", "50ml", "50 ML" -> "50ml"), compared against variant titles normalised the same way {%- endcomment -%}
 {% assign bundle_size_token = dropdown_ml | append: '' | downcase | strip | replace: ' ', '' | remove: 'ml' | append: 'ml' %}
 {% assign selected_variant = product.selected_or_first_available_variant %}
 {% assign fixed_bundle_products = product.metafields.custom.fixed_bundle_products.value %}
@@ -126,51 +127,35 @@
       </svg>
     </div>
   </button>
-  <p x-data x-show="$store.bundleBuilder.cartError" x-text="$store.bundleBuilder.cartError"
-     role="alert" aria-live="assertive" class="!mt-2 !mb-0 text-sm text-center text-red-600"></p>
+  <p
+    x-data
+    x-show="$store.bundleBuilder.cartError"
+    x-text="$store.bundleBuilder.cartError"
+    role="alert"
+    aria-live="assertive"
+    class="!mt-2 !mb-0 text-sm text-center text-red-600"
+  ></p>
 </div>
 
 <div>
   <img
-    class="max-w-[400px] w-full mx-auto mt-8 block [filter:grayscale(1)]"
-    src="{{ 'payment-badge.svg' | asset_url }}"
+    class="max-w-full mx-auto mt-8 block [filter:grayscale(1)]"
+    src="{{ 'payment-badge.png' | asset_url }}"
     alt="Payment methods"
     width="100%"
     height="auto"
     loading="lazy">
 </div>
 
-<div class="!my-6 flex items-center gap-3 rounded-lg border border-solid border-gray-200 bg-gray-50 p-3">
-  <svg
-    class="size-6"
-    viewBox="0 0 24 24"
-    fill="none"
-    stroke="#1a1a1a"
-    stroke-width="1.5"
-    xmlns="http://www.w3.org/2000/svg">
-    <path
-      d="M5 12H19M12 5V19"
-      stroke="#1a1a1a"
-      stroke-width="2"
-      stroke-linecap="round"></path>
-    <path
-      d="M12 22C12 22 20 16 20 10C20 5.58172 16.4183 2 12 2C7.58172 2 4 5.58172 4 10C4 16 12 22 12 22Z"
-      fill="white"
-      stroke="#1a1a1a"
-      stroke-width="2"></path>
-    <circle
-      cx="12"
-      cy="10"
-      r="3"
-      fill="#1a1a1a"></circle>
-  </svg>
-  <div>
-    <p class="m-0 font-semibold tracking-normal text-black leading-snug">Ships Next Day from {% render 'ships-from-location' %}</p>
-  {% comment %} {% unless localization.country.iso_code == 'US' %}
-                              <p class="m-0 text-gray-500 tracking-normal text-sm">Delivered in 3-7 business days.</p>
-                {% endunless %} {% endcomment %}
+{% unless product.template_suffix == 'cro-deck' %}
+  <div class="!my-6">
+    <p class="my-0 text-center font-semibold tracking-normal">
+      Levereras till
+      <span class="shipping_location">{{ localization.country.name }}</span>
+      inom 5 arbetsdagar.
+    </p>
   </div>
-</div>
+{% endunless %}
 
 <script>
   document.addEventListener('alpine:init', function() {
@@ -228,6 +213,7 @@
           {% paginate bundle_collection.products by 250 %}
             {% for bundle_product in bundle_collection.products %}
               {% liquid
+                # Find this product's bundle-size variant; skip the product when it has none or it is out of stock
                 assign bundle_variant = nil
                 for variant in bundle_product.variants
                   assign variant_token = variant.title | downcase | strip | replace: ' ', ''
@@ -236,9 +222,14 @@
                     break
                   endif
                 endfor
+                # No size match: fall back to the product's "Default Title" variant
+                if bundle_variant == blank and bundle_product.has_only_default_variant
+                  assign bundle_variant = bundle_product.variants.first
+                endif
                 if bundle_variant == blank or bundle_variant.available == false
                   continue
                 endif
+                # available stays true for tracked variants set to "continue selling when out of stock"
                 if bundle_variant.inventory_management == 'shopify' and bundle_variant.inventory_quantity < 1
                   continue
                 endif
@@ -250,33 +241,15 @@
                     assign collection_handles = collection_handles | append: ','
                   endif
                 endfor
-
-                # Same gender tags main-product checks; women first since "women" contains "men"
-                assign gender_label = ''
-                for tag in bundle_product.tags
-                  assign tag_token = tag | downcase | strip
-                  if tag_token == 'unisex'
-                    assign gender_label = 'Unisex'
-                    break
-                  elsif tag_token == 'woman' or tag_token == 'women' or tag_token == 'fuer-frauen' or tag_token == 'damen'
-                    assign gender_label = 'Women'
-                    break
-                  elsif tag_token == 'man' or tag_token == 'men' or tag_token == 'fuer-maenner' or tag_token == 'herren'
-                    assign gender_label = 'Men'
-                  endif
-                endfor
               %}
               {
                 id: {{ bundle_product.id }},
                 name: "{{ bundle_product.title }}",
                 image: "{{ bundle_product.featured_image | image_url: width: 120, height: 120 }}",
-                nuta: "{% if bundle_product.metafields.custom.inspiration.value %}{{ bundle_product.metafields.custom.inspiration.value.name }}{% endif %}",
-                inspiration_image: "{% if bundle_product.metafields.custom.inspiration.value %}{{ bundle_product.metafields.custom.inspiration.value.image | image_url: width: 90, height: 90 }}{% endif %}",
-                inspiration_name: "{% if bundle_product.metafields.custom.inspiration.value %}{{ bundle_product.metafields.custom.inspiration.value.name }}{% endif %}",
+                nuta: "",
+                inspiration_image: "",
+                inspiration_name: "{% if bundle_product.metafields.custom.inspiration %}{{ bundle_product.metafields.custom.inspiration }}{% endif %}",
                 tags: {{ bundle_product.tags | json }},
-                bestseller: {% if bundle_product.tags contains 'bestseller' %}true{% else %}false{% endif %},
-                gender: {{ gender_label | json }},
-                fragrance_family: {{ bundle_product.metafields.custom.fragrance_family.value | join: ', ' | json }},
                 collections: "{{ collection_handles }}",
                 variants: {
                   {{ bundle_size_token | json }}: {
@@ -289,19 +262,25 @@
           {% endpaginate %}
         {% endfor %}
       ].map(product => [product.id, product])).values()),
-      addRemoveProduct(product) {
-        if (this.selectedProducts.length < {{ product_count }} && !this.isProductSelected(product.id)) {
-          product.variant = product.variants[this.selectedVariant]
-          this.selectedProducts.push(product);
+      // The same product may fill several slots
+      addProduct(product) {
+        if (this.selectedProducts.length >= {{ product_count }}) return;
+        product.variant = product.variants[this.selectedVariant]
+        this.selectedProducts.push(product);
 
-          if (this.selectedProducts.length === {{ product_count }}) {
-            this.showModal = false;
-            // Do auto ATC and redirect to checkout
-            this.doATCandCheckout();
-          }
-        } else {
-          this.removeProduct(this.selectedProducts.findIndex(item => item.id === product.id));
+        if (this.selectedProducts.length === {{ product_count }}) {
+          this.showModal = false;
+          // Do auto ATC and redirect to checkout
+          this.doATCandCheckout();
         }
+      },
+      // Drops the last slot holding this product
+      decrementProduct(product) {
+        const index = this.selectedProducts.findLastIndex(item => item.id === product.id);
+        if (index > -1) this.removeProduct(index);
+      },
+      productQty(productId) {
+        return this.selectedProducts.filter(item => item.id === productId).length;
       },
       removeProduct(index) {
         this.selectedProducts.splice(index, 1);
@@ -314,7 +293,7 @@
         this.addingToCart = true;
         this.cartError = '';
 
-        // Products pushed in without a variant (e.g. quiz prefill) get the bundle-size one
+        // Products pushed directly (e.g. quiz prefill) have no variant set yet
         this.selectedProducts.forEach(product => {
           product.variant = product.variant || product.variants[this.selectedVariant];
         });
@@ -328,7 +307,8 @@
         // Add each selected product as a separate property
         this.selectedProducts.forEach((product, index) => {
           properties[`Flasche ${index + 1}`] =
-            `${product.name} Inspiriert von ${product.inspiration_name} - ${product.variant.title}`;
+            `${product.name} Inspiriert von ${product.inspiration_name}` +
+            (product.variant.title === 'Default Title' ? '' : ` - ${product.variant.title}`);
         });
         // Prepare cart items
         const items = {
@@ -350,6 +330,7 @@
         .then(async response => {
           const data = await response.json().catch(() => ({}));
           if (!response.ok || data.status) {
+            // Shopify returns { status, message, description } on failure
             const error = new Error(data.description || data.message || `Request failed with status ${response.status}`);
             error.response = data;
             throw error;
@@ -362,8 +343,8 @@
         })
         .catch(error => {
           console.error('Error adding to cart:', error, error.response || '');
-          const response = error.response || {};
-          this.cartError = response.description || response.message || {{ 'sections.cart.cart_error' | t | json }};
+          this.cartError = (error.response && (error.response.description || error.response.message))
+            || {{ 'sections.cart.cart_error' | t | json }};
         })
         .finally(() => {
           this.addingToCart = false;
