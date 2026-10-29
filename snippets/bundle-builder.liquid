@@ -270,8 +270,9 @@
 
         if (this.selectedProducts.length === {{ product_count }}) {
           this.showModal = false;
-          // Do auto ATC and redirect to checkout
+          {%- if block.settings.skip_atc_button != false %}
           this.doATCandCheckout();
+          {%- endif %}
         }
       },
       // Drops the last slot holding this product
@@ -318,6 +319,11 @@
             properties: properties
           }]
         };
+        const cart = document.querySelector('cart-drawer');
+        if (cart) {
+          items.sections = cart.getSectionsToRender().map(s => s.id);
+          items.sections_url = window.location.pathname;
+        }
 
         // Make the API call
         fetch('/cart/add.js', {
@@ -337,9 +343,16 @@
           }
           return data;
         })
-        .then(() => {
-          // Redirect to cart after successful addition
+        .then(data => {
+          {%- unless product.tags contains 'fixed_bundle' %}
+          this.selectedProducts = [];
+          {%- endunless %}
+          {%- if block.settings.open_checkout %}
           window.location.href = '/checkout';
+          {%- else %}
+          if (cart) cart.renderContents(data);
+          else window.location.href = '/cart';
+          {%- endif %}
         })
         .catch(error => {
           console.error('Error adding to cart:', error, error.response || '');
